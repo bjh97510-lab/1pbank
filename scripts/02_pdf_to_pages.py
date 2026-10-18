@@ -60,6 +60,7 @@ BOTTOM = 40
 PAD = 4                                 # 영역 바깥 여유(pt)
 ROW_SLACK = 12                          # 앵커 줄보다 이만큼 위까지는 같은 줄로 간주 (분수 분자 등)
 SHAPE_SLACK = 20                        # 그림 덩어리의 윗변이 앵커 줄보다 이만큼 위까지면 같은 줄
+TALL = 18                               # 이보다 키 큰 글자/도형(중괄호, 큰 분수)은 번호 위로 솟은 내용을 끌어올 수 있음
 
 PUA = re.compile(r"[-]")    # 한글 수식 글꼴(HyhwpEQ) 의 사용자 영역 글자
 # HyhwpEQ 글꼴의 숫자 글리프 → 실제 숫자 (관찰값: =1 … =9, =0)
@@ -219,8 +220,35 @@ def analyze_column(spans, drawings, images, left, right, anchors, H, col_index):
             owned_spans[id(a)].append(s)
     for c in cluster_rects(shapes + figs):
         a = owner(c[0], c[1], SHAPE_SLACK)
+        if c[3] - c[1] > TALL and (a is None or not is_header(a)):
+            # 번호 바로 오른쪽(40pt 이내)에서 시작하는 키 큰 도형(선으로 그린 중괄호)이 번호를 세로로 가로지르면
+            # 그 번호 줄 소속. (지시문 옆에 멀리 떨어진 그림은 지시문 소유를 유지)
+            for row in rows:
+                hit = [b for b in row if c[1] <= b.y0 and b.y1 <= c[3] and 0 <= c[0] - b.x1 < 40]
+                if hit:
+                    a = hit[-1]
+                    break
         if a is not None:
             owned_shapes[id(a)].append(c)
+
+    # --- 번호보다 위로 솟은 키 큰 요소(연립방정식의 중괄호, 큰 분수 등) 보정 ---
+    #   어떤 줄의 키 큰 요소가 세로로 덮는 범위 안에 앞 줄 소속으로 잡힌 글자/선(첫 줄의 분수 등)이 있으면 이 줄로 옮긴다.
+    for ri in range(1, len(rows)):
+        for a in rows[ri]:
+            tall = [s.rect for s in owned_spans[id(a)] if s.y1 - s.y0 > TALL] \
+                 + [c for c in owned_shapes[id(a)] if c[3] - c[1] > TALL]
+            if not tall:
+                continue
+            ty0, ty1 = min(r[1] for r in tall), max(r[3] for r in tall)
+            for b in rows[ri - 1]:
+                keep = []
+                for s in owned_spans[id(b)]:
+                    (owned_spans[id(a)] if ty0 <= s.cy <= ty1 else keep).append(s)
+                owned_spans[id(b)] = keep
+                keep = []
+                for c in owned_shapes[id(b)]:
+                    (owned_shapes[id(a)] if ty0 <= (c[1] + c[3]) / 2 <= ty1 else keep).append(c)
+                owned_shapes[id(b)] = keep
 
     # --- 지시문 옆에 놓인 그림이 아래 문항들 옆까지 길게 이어지는 경우 ---
     #   그림(과 그 안의 라벨 글자)은 지시문 소유로, 그림과 나란한 문항들은 폭을 그림 왼쪽까지로 제한하고
@@ -298,7 +326,10 @@ def analyze_column(spans, drawings, images, left, right, anchors, H, col_index):
                 headers.append(entry)
             else:
                 sp = sorted(owned_spans[id(a)], key=lambda s: (round(s.y0 / 4), s.x0))
-                entry["text"] = re.sub(r"\s+", " ", eq_text(" ".join(s.text for s in sp))).strip()
+                text = re.sub(r"\s+", " ", eq_text(" ".join(s.text for s in sp))).strip()
+                if sp and min(s.size for s in sp) < 0.8 * max(s.size for s in sp):
+                    text = ""          # 지수(작은 글자)가 섞이면 글자 순서가 뒤섞이므로 이미지로만 제공
+                entry["text"] = text
                 items.append(entry)
     return items, headers
 

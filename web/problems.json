@@ -429,7 +429,7 @@
   "num": "31",
   "difficulty": "하",
   "image_url": "images/MATH_1_01_C_031.png",
-  "answer": "4 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_031_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -443,7 +443,7 @@
   "num": "32",
   "difficulty": "하",
   "image_url": "images/MATH_1_01_C_032.png",
-  "answer": "5 9",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_032_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -471,7 +471,7 @@
   "num": "34",
   "difficulty": "중",
   "image_url": "images/MATH_1_01_C_034.png",
-  "answer": "2 5 5 × 6",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_034_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -499,7 +499,7 @@
   "num": "36",
   "difficulty": "중",
   "image_url": "images/MATH_1_01_C_036.png",
-  "answer": "2 3 × 5 2 × 11 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_036_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -513,7 +513,7 @@
   "num": "37",
   "difficulty": "중",
   "image_url": "images/MATH_1_01_C_037.png",
-  "answer": "2 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_037_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -527,7 +527,7 @@
   "num": "38",
   "difficulty": "중",
   "image_url": "images/MATH_1_01_C_038.png",
-  "answer": "5 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_038_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -541,7 +541,7 @@
   "num": "39",
   "difficulty": "중",
   "image_url": "images/MATH_1_01_C_039.png",
-  "answer": "3 4",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_039_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -807,7 +807,7 @@
   "num": "58",
   "difficulty": "중",
   "image_url": "images/MATH_1_01_C_058.png",
-  "answer": "2 2 × 5",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_058_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -821,7 +821,7 @@
   "num": "59",
   "difficulty": "중",
   "image_url": "images/MATH_1_01_C_059.png",
-  "answer": "5 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_059_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -835,7 +835,7 @@
   "num": "60",
   "difficulty": "중",
   "image_url": "images/MATH_1_01_C_060.png",
-  "answer": "2 2 × 3 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_060_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -863,7 +863,7 @@
   "num": "62",
   "difficulty": "중",
   "image_url": "images/MATH_1_01_C_062.png",
-  "answer": "3 2 × 7",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_062_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -877,7 +877,7 @@
   "num": "63",
   "difficulty": "중",
   "image_url": "images/MATH_1_01_C_063.png",
-  "answer": "2 6",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_063_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -891,7 +891,7 @@
   "num": "64",
   "difficulty": "중",
   "image_url": "images/MATH_1_01_C_064.png",
-  "answer": "2 4 × 5",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_064_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -905,7 +905,7 @@
   "num": "65",
   "difficulty": "중",
   "image_url": "images/MATH_1_01_C_065.png",
-  "answer": "2 2 × 3× 7",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_065_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -933,7 +933,7 @@
   "num": "67",
   "difficulty": "상",
   "image_url": "images/MATH_1_01_C_067.png",
-  "answer": "3 3 × 5",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_067_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -947,7 +947,7 @@
   "num": "68",
   "difficulty": "상",
   "image_url": "images/MATH_1_01_C_068.png",
-  "answer": "2 2 × 37",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_068_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -961,7 +961,7 @@
   "num": "69",
   "difficulty": "상",
   "image_url": "images/MATH_1_01_C_069.png",
-  "answer": "2 2 2 × 3 × 5",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_069_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -975,7 +975,7 @@
   "num": "70",
   "difficulty": "상",
   "image_url": "images/MATH_1_01_C_070.png",
-  "answer": "4 2 × 3× 5",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_070_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -989,7 +989,7 @@
   "num": "71",
   "difficulty": "상",
   "image_url": "images/MATH_1_01_C_071.png",
-  "answer": "2 2 2 × 3 × 7",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_071_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -1213,7 +1213,7 @@
   "num": "87",
   "difficulty": "상",
   "image_url": "images/MATH_1_01_C_087.png",
-  "answer": "3, 5 / 2 × 1 3 3 1 1 3 9 5 5 15 45 / 1, 3, 5, 9, 15, 45",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_087_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -1227,7 +1227,7 @@
   "num": "88",
   "difficulty": "상",
   "image_url": "images/MATH_1_01_C_088.png",
-  "answer": "3, 7 / × 1 3 3 2 1 1 3 9 7 7 21 63 1, 3, 7, 9, 21, 63 /",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_088_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -1241,7 +1241,7 @@
   "num": "89",
   "difficulty": "상",
   "image_url": "images/MATH_1_01_C_089.png",
-  "answer": "3, 11 / × 1 3 3 2 1 1 3 9 11 11 33 99 / 1, 3, 9, 11, 33, 99",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_089_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -1255,7 +1255,7 @@
   "num": "90",
   "difficulty": "상",
   "image_url": "images/MATH_1_01_C_090.png",
-  "answer": "2, 7 / × 1 2 2 3 2 2 1 1 2 4 8 7 7 14 28 56 / 1, 2, 4, 7, 8, 14, 28, 56",
+  "answer": "",
   "explanation_image": "images/MATH_1_01_C_090_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_1단원"
  },
@@ -9991,7 +9991,7 @@
   "num": "04",
   "difficulty": "하",
   "image_url": "images/MATH_1_03_C_004.png",
-  "answer": "4 x",
+  "answer": "",
   "explanation_image": "images/MATH_1_03_C_004_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_3단원"
  },
@@ -10075,7 +10075,7 @@
   "num": "10",
   "difficulty": "하",
   "image_url": "images/MATH_1_03_C_010.png",
-  "answer": "3 -3a b",
+  "answer": "",
   "explanation_image": "images/MATH_1_03_C_010_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_3단원"
  },
@@ -10173,7 +10173,7 @@
   "num": "17",
   "difficulty": "하",
   "image_url": "images/MATH_1_03_C_017.png",
-  "answer": "x 2 -2y",
+  "answer": "",
   "explanation_image": "images/MATH_1_03_C_017_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_3단원"
  },
@@ -23095,7 +23095,7 @@
   "num": "37",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_237.png",
-  "answer": "l=4πcm , S=4πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_237_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23109,7 +23109,7 @@
   "num": "38",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_238.png",
-  "answer": "l=6πcm , S=9πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_238_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23123,7 +23123,7 @@
   "num": "39",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_239.png",
-  "answer": "2 l=12πcm , S=36πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_239_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23137,7 +23137,7 @@
   "num": "40",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_240.png",
-  "answer": "l=10πcm , S=25πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_240_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23151,7 +23151,7 @@
   "num": "41",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_241.png",
-  "answer": "l=16πcm , S=64πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_241_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23165,7 +23165,7 @@
   "num": "42",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_242.png",
-  "answer": "l=10πcm , S=25πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_242_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23179,7 +23179,7 @@
   "num": "43",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_243.png",
-  "answer": "2 l=18πcm , S=81πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_243_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23193,7 +23193,7 @@
   "num": "44",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_244.png",
-  "answer": "l=24πcm , S=144πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_244_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23207,7 +23207,7 @@
   "num": "45",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_245.png",
-  "answer": "l=14πcm , S=49πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_245_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23221,7 +23221,7 @@
   "num": "46",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_246.png",
-  "answer": "l=20πcm , S=100πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_246_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23375,7 +23375,7 @@
   "num": "57",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_257.png",
-  "answer": "l=14πcm , S=21πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_257_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23389,7 +23389,7 @@
   "num": "58",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_258.png",
-  "answer": "l=30πcm , S=75πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_258_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23403,7 +23403,7 @@
   "num": "59",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_259.png",
-  "answer": "2 l=24πcm , S=18πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_259_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23417,7 +23417,7 @@
   "num": "60",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_260.png",
-  "answer": "l=20πcm S=12πcm 2 ,",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_260_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23431,7 +23431,7 @@
   "num": "61",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_261.png",
-  "answer": "l=8πcm , S=8πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_261_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23445,7 +23445,7 @@
   "num": "62",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_262.png",
-  "answer": "l=12πcm , S=12πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_262_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23459,7 +23459,7 @@
   "num": "63",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_263.png",
-  "answer": "2 l=12πcm , S=6πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_263_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23473,7 +23473,7 @@
   "num": "64",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_264.png",
-  "answer": "l=16πcm , S=16πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_264_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23501,7 +23501,7 @@
   "num": "66",
   "difficulty": "중",
   "image_url": "images/MATH_1_06_C_266.png",
-  "answer": "l=2πcm , S=4πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_266_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23515,7 +23515,7 @@
   "num": "67",
   "difficulty": "상",
   "image_url": "images/MATH_1_06_C_267.png",
-  "answer": "2 l=4πcm , S=32πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_267_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23529,7 +23529,7 @@
   "num": "68",
   "difficulty": "상",
   "image_url": "images/MATH_1_06_C_268.png",
-  "answer": "l=4πcm S=48πcm 2 ,",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_268_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23543,7 +23543,7 @@
   "num": "69",
   "difficulty": "상",
   "image_url": "images/MATH_1_06_C_269.png",
-  "answer": "l=6πcm , S=24πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_269_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23557,7 +23557,7 @@
   "num": "70",
   "difficulty": "상",
   "image_url": "images/MATH_1_06_C_270.png",
-  "answer": "2 l=6πcm , S=27πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_270_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23571,7 +23571,7 @@
   "num": "71",
   "difficulty": "상",
   "image_url": "images/MATH_1_06_C_271.png",
-  "answer": "l=πcm , S=πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_271_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23585,7 +23585,7 @@
   "num": "72",
   "difficulty": "상",
   "image_url": "images/MATH_1_06_C_272.png",
-  "answer": "l=4πcm , S=10πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_272_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23599,7 +23599,7 @@
   "num": "73",
   "difficulty": "상",
   "image_url": "images/MATH_1_06_C_273.png",
-  "answer": "2 l=12πcm , S=48πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_273_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23613,7 +23613,7 @@
   "num": "74",
   "difficulty": "상",
   "image_url": "images/MATH_1_06_C_274.png",
-  "answer": "l=10πcm , S=60πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_274_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23627,7 +23627,7 @@
   "num": "75",
   "difficulty": "상",
   "image_url": "images/MATH_1_06_C_275.png",
-  "answer": "2 l=20πcm , S=150πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_275_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -23641,7 +23641,7 @@
   "num": "76",
   "difficulty": "상",
   "image_url": "images/MATH_1_06_C_276.png",
-  "answer": "l=6πcm S=30πcm 2 ,",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_C_276_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_6단원"
  },
@@ -24047,7 +24047,7 @@
   "num": "5",
   "difficulty": "하",
   "image_url": "images/MATH_1_06_P_005.png",
-  "answer": "31.4cm 78.5cm 2 ⑴ 원주: , 원의 넓이: 2 ⑵ 원주: 25.12cm , 원의 넓이: 50.24cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_06_P_005_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_준비학습지_6단원"
  },
@@ -24061,7 +24061,7 @@
   "num": "01",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_001.png",
-  "answer": "236cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_001_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24075,7 +24075,7 @@
   "num": "02",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_002.png",
-  "answer": "384cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_002_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24089,7 +24089,7 @@
   "num": "03",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_003.png",
-  "answer": "324cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_003_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24103,7 +24103,7 @@
   "num": "04",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_004.png",
-  "answer": "2 96πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_004_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24117,7 +24117,7 @@
   "num": "05",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_005.png",
-  "answer": "2 130πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_005_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24145,7 +24145,7 @@
   "num": "07",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_007.png",
-  "answer": "(1) 6cm 2 (2) 96cm 2 (3) 108cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_007_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24159,7 +24159,7 @@
   "num": "08",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_008.png",
-  "answer": "2 2 2 (1) 12cm (2) 80cm (3) 104cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_008_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24173,7 +24173,7 @@
   "num": "09",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_009.png",
-  "answer": "(1) 25πcm 2 (2) 80πcm 2 (3) 130πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_009_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24187,7 +24187,7 @@
   "num": "10",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_010.png",
-  "answer": "9πcm 2 30πcm 2 48πcm 2 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_010_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24201,7 +24201,7 @@
   "num": "11",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_011.png",
-  "answer": "2 292cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_011_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24215,7 +24215,7 @@
   "num": "12",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_012.png",
-  "answer": "2 166cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_012_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24229,7 +24229,7 @@
   "num": "13",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_013.png",
-  "answer": "2 152cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_013_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24243,7 +24243,7 @@
   "num": "14",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_014.png",
-  "answer": "216cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_014_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24257,7 +24257,7 @@
   "num": "15",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_015.png",
-  "answer": "208πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_015_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24271,7 +24271,7 @@
   "num": "16",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_016.png",
-  "answer": "168πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_016_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24355,7 +24355,7 @@
   "num": "22",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_022.png",
-  "answer": "90cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_022_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24369,7 +24369,7 @@
   "num": "23",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_023.png",
-  "answer": "140πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_023_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24383,7 +24383,7 @@
   "num": "24",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_024.png",
-  "answer": "484cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_024_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24411,7 +24411,7 @@
   "num": "26",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_026.png",
-  "answer": "2 64πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_026_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24425,7 +24425,7 @@
   "num": "27",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_027.png",
-  "answer": "2 96πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_027_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24439,7 +24439,7 @@
   "num": "28",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_028.png",
-  "answer": "2 340πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_028_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24453,7 +24453,7 @@
   "num": "29",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_029.png",
-  "answer": "20πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_029_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24467,7 +24467,7 @@
   "num": "30",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_030.png",
-  "answer": "64πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_030_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24481,7 +24481,7 @@
   "num": "31",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_031.png",
-  "answer": "40πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_031_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24495,7 +24495,7 @@
   "num": "32",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_032.png",
-  "answer": "16cm 2 64cm 2 80cm 2 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_032_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24509,7 +24509,7 @@
   "num": "33",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_033.png",
-  "answer": "2 2 2 (1) 49cm (2) 140cm (3) 189cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_033_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24523,7 +24523,7 @@
   "num": "34",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_034.png",
-  "answer": "(1) 25πcm 2 (2) 50πcm 2 (3) 75πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_034_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24537,7 +24537,7 @@
   "num": "35",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_035.png",
-  "answer": "36πcm 2 60πcm 2 96πcm 2 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_035_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24551,7 +24551,7 @@
   "num": "36",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_036.png",
-  "answer": "2 105cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_036_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24565,7 +24565,7 @@
   "num": "37",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_037.png",
-  "answer": "2 120cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_037_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24579,7 +24579,7 @@
   "num": "38",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_038.png",
-  "answer": "2 297cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_038_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24593,7 +24593,7 @@
   "num": "39",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_039.png",
-  "answer": "96cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_039_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24607,7 +24607,7 @@
   "num": "40",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_040.png",
-  "answer": "85πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_040_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24621,7 +24621,7 @@
   "num": "41",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_041.png",
-  "answer": "126πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_041_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24635,7 +24635,7 @@
   "num": "42",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_042.png",
-  "answer": "2 90πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_042_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24691,7 +24691,7 @@
   "num": "46",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_046.png",
-  "answer": "2 135cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_046_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24705,7 +24705,7 @@
   "num": "47",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_047.png",
-  "answer": "2 170cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_047_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24719,7 +24719,7 @@
   "num": "48",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_048.png",
-  "answer": "360cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_048_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24733,7 +24733,7 @@
   "num": "49",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_049.png",
-  "answer": "245πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_049_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24747,7 +24747,7 @@
   "num": "50",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_050.png",
-  "answer": "82πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_050_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24775,7 +24775,7 @@
   "num": "02",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_052.png",
-  "answer": "(1) 6cm 2 (2) 7cm (3) 42cm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_052_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24789,7 +24789,7 @@
   "num": "03",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_053.png",
-  "answer": "(1) 45cm 2 (2) 10cm (3) 450cm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_053_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24803,7 +24803,7 @@
   "num": "04",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_054.png",
-  "answer": "(1) 27cm 2 (2) 4cm (3) 108cm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_054_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24817,7 +24817,7 @@
   "num": "05",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_055.png",
-  "answer": "(1) 15cm 2 (2) 5cm (3) 75cm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_055_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24831,7 +24831,7 @@
   "num": "06",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_056.png",
-  "answer": "(1) 63cm 2 (2) 10cm (3) 630cm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_056_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24845,7 +24845,7 @@
   "num": "07",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_057.png",
-  "answer": "42cm 2 10cm 420cm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_057_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24859,7 +24859,7 @@
   "num": "08",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_058.png",
-  "answer": "27cm 2 15cm 405cm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_058_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24873,7 +24873,7 @@
   "num": "09",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_059.png",
-  "answer": "40cm 2 11cm 440cm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_059_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24887,7 +24887,7 @@
   "num": "10",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_060.png",
-  "answer": "16πcm 2 8cm 128πcm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_060_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24901,7 +24901,7 @@
   "num": "11",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_061.png",
-  "answer": "9πcm 2 9cm 81πcm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_061_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24915,7 +24915,7 @@
   "num": "12",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_062.png",
-  "answer": "36πcm 2 6cm 216πcm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_062_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24929,7 +24929,7 @@
   "num": "13",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_063.png",
-  "answer": "25πcm 2 10cm 250πcm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_063_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24943,7 +24943,7 @@
   "num": "14",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_064.png",
-  "answer": "2 3 (1) 81πcm (2) 6cm (3) 486πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_064_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24957,7 +24957,7 @@
   "num": "15",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_065.png",
-  "answer": "2 3 (1) 36πcm (2) 12cm (3) 432πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_065_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24971,7 +24971,7 @@
   "num": "16",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_066.png",
-  "answer": "3 288cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_066_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24985,7 +24985,7 @@
   "num": "17",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_067.png",
-  "answer": "3 105cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_067_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -24999,7 +24999,7 @@
   "num": "18",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_068.png",
-  "answer": "3 36cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_068_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25013,7 +25013,7 @@
   "num": "19",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_069.png",
-  "answer": "3 24πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_069_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25027,7 +25027,7 @@
   "num": "20",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_070.png",
-  "answer": "3 45πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_070_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25041,7 +25041,7 @@
   "num": "21",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_071.png",
-  "answer": "3 216πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_071_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25069,7 +25069,7 @@
   "num": "23",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_073.png",
-  "answer": "3 660πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_073_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25083,7 +25083,7 @@
   "num": "24",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_074.png",
-  "answer": "675cm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_074_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25097,7 +25097,7 @@
   "num": "25",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_075.png",
-  "answer": "55cm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_075_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25125,7 +25125,7 @@
   "num": "27",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_077.png",
-  "answer": "20πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_077_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25139,7 +25139,7 @@
   "num": "28",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_078.png",
-  "answer": "212πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_078_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25195,7 +25195,7 @@
   "num": "32",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_082.png",
-  "answer": "42cm 2 8cm 112cm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_082_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25209,7 +25209,7 @@
   "num": "33",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_083.png",
-  "answer": "9cm 2 6cm 18cm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_083_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25223,7 +25223,7 @@
   "num": "34",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_084.png",
-  "answer": "25cm 2 9cm 75cm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_084_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25237,7 +25237,7 @@
   "num": "35",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_085.png",
-  "answer": "24cm 2 10cm 80cm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_085_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25265,7 +25265,7 @@
   "num": "37",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_087.png",
-  "answer": "48cm 2 7cm 112cm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_087_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25279,7 +25279,7 @@
   "num": "38",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_088.png",
-  "answer": "(1) 9πcm 2 (2) 4cm (3) 12πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_088_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25293,7 +25293,7 @@
   "num": "39",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_089.png",
-  "answer": "(1) 25πcm 2 (2) 9cm (3) 75πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_089_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25307,7 +25307,7 @@
   "num": "40",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_090.png",
-  "answer": "36πcm 2 12cm 144πcm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_090_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25321,7 +25321,7 @@
   "num": "41",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_091.png",
-  "answer": "25πcm 2 12cm 100πcm 3 (1) (2) (3)",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_091_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25335,7 +25335,7 @@
   "num": "42",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_092.png",
-  "answer": "224cm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_092_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25349,7 +25349,7 @@
   "num": "43",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_093.png",
-  "answer": "468cm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_093_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25363,7 +25363,7 @@
   "num": "44",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_094.png",
-  "answer": "105πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_094_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25377,7 +25377,7 @@
   "num": "45",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_095.png",
-  "answer": "3 76πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_095_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25391,7 +25391,7 @@
   "num": "46",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_096.png",
-  "answer": "3 225cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_096_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25433,7 +25433,7 @@
   "num": "49",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_099.png",
-  "answer": "100πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_099_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25447,7 +25447,7 @@
   "num": "50",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_100.png",
-  "answer": "192πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_100_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25461,7 +25461,7 @@
   "num": "01",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_101.png",
-  "answer": "2 16πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_101_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25475,7 +25475,7 @@
   "num": "02",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_102.png",
-  "answer": "2 36πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_102_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25489,7 +25489,7 @@
   "num": "03",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_103.png",
-  "answer": "2 64πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_103_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25503,7 +25503,7 @@
   "num": "04",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_104.png",
-  "answer": "100πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_104_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25517,7 +25517,7 @@
   "num": "05",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_105.png",
-  "answer": "144πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_105_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25531,7 +25531,7 @@
   "num": "06",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_106.png",
-  "answer": "12πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_106_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25545,7 +25545,7 @@
   "num": "07",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_107.png",
-  "answer": "27πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_107_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25559,7 +25559,7 @@
   "num": "08",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_108.png",
-  "answer": "48πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_108_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25573,7 +25573,7 @@
   "num": "09",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_109.png",
-  "answer": "75πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_109_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25587,7 +25587,7 @@
   "num": "10",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_110.png",
-  "answer": "2 16πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_110_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25601,7 +25601,7 @@
   "num": "11",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_111.png",
-  "answer": "2 144πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_111_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25615,7 +25615,7 @@
   "num": "12",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_112.png",
-  "answer": "2 72πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_112_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25629,7 +25629,7 @@
   "num": "13",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_113.png",
-  "answer": "128πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_113_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25643,7 +25643,7 @@
   "num": "14",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_114.png",
-  "answer": "17πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_114_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25657,7 +25657,7 @@
   "num": "15",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_115.png",
-  "answer": "153πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_115_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25671,7 +25671,7 @@
   "num": "16",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_C_116.png",
-  "answer": "204πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_116_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25685,7 +25685,7 @@
   "num": "17",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_117.png",
-  "answer": "22πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_117_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25699,7 +25699,7 @@
   "num": "18",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_118.png",
-  "answer": "66πcm 2",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_118_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25713,7 +25713,7 @@
   "num": "19",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_119.png",
-  "answer": "2 4πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_119_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25727,7 +25727,7 @@
   "num": "20",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_120.png",
-  "answer": "2 324πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_120_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25797,7 +25797,7 @@
   "num": "25",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_125.png",
-  "answer": "36πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_125_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25839,7 +25839,7 @@
   "num": "28",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_128.png",
-  "answer": "288πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_128_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25853,7 +25853,7 @@
   "num": "29",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_129.png",
-  "answer": "18πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_129_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25895,7 +25895,7 @@
   "num": "32",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_132.png",
-  "answer": "3 486πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_132_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25909,7 +25909,7 @@
   "num": "33",
   "difficulty": "중",
   "image_url": "images/MATH_1_07_C_133.png",
-  "answer": "8πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_133_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25923,7 +25923,7 @@
   "num": "34",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_134.png",
-  "answer": "216πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_134_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25937,7 +25937,7 @@
   "num": "35",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_135.png",
-  "answer": "9πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_135_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25965,7 +25965,7 @@
   "num": "37",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_137.png",
-  "answer": "3 252πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_137_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -25993,7 +25993,7 @@
   "num": "39",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_139.png",
-  "answer": "72πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_139_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -26007,7 +26007,7 @@
   "num": "40",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_140.png",
-  "answer": "16πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_140_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -26021,7 +26021,7 @@
   "num": "41",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_141.png",
-  "answer": "72πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_141_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -26035,7 +26035,7 @@
   "num": "42",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_142.png",
-  "answer": "3 504πcm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_142_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -26077,7 +26077,7 @@
   "num": "45",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_145.png",
-  "answer": "972πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_145_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -26105,7 +26105,7 @@
   "num": "47",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_147.png",
-  "answer": "432πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_147_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -26119,7 +26119,7 @@
   "num": "48",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_148.png",
-  "answer": "144πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_148_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -26133,7 +26133,7 @@
   "num": "49",
   "difficulty": "상",
   "image_url": "images/MATH_1_07_C_149.png",
-  "answer": "288πcm 3",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_C_149_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_연산학습지_7단원"
  },
@@ -26189,7 +26189,7 @@
   "num": "3",
   "difficulty": "하",
   "image_url": "images/MATH_1_07_P_003.png",
-  "answer": "2 3 ⑴ 62cm ⑵ 30cm",
+  "answer": "",
   "explanation_image": "images/MATH_1_07_P_003_ans.png",
   "source": "(동아출판) 22개정_중학_수학1_준비학습지_7단원"
  },
@@ -27141,7 +27141,7 @@
   "num": "63",
   "difficulty": "중",
   "image_url": "images/MATH_2_01_C_063.png",
-  "answer": "5 2 0.25 / 25 /",
+  "answer": "",
   "explanation_image": "images/MATH_2_01_C_063_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_1단원"
  },
@@ -27155,7 +27155,7 @@
   "num": "64",
   "difficulty": "중",
   "image_url": "images/MATH_2_01_C_064.png",
-  "answer": "5 3 5 3 0.375 , / 375 /",
+  "answer": "",
   "explanation_image": "images/MATH_2_01_C_064_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_1단원"
  },
@@ -27183,7 +27183,7 @@
   "num": "66",
   "difficulty": "중",
   "image_url": "images/MATH_2_01_C_066.png",
-  "answer": "2 2 , 2 2 / 32 / 0.32",
+  "answer": "",
   "explanation_image": "images/MATH_2_01_C_066_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_1단원"
  },
@@ -27211,7 +27211,7 @@
   "num": "68",
   "difficulty": "상",
   "image_url": "images/MATH_2_01_C_068.png",
-  "answer": "5 4 , 5 4 / 625 / 0.0625",
+  "answer": "",
   "explanation_image": "images/MATH_2_01_C_068_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_1단원"
  },
@@ -27225,7 +27225,7 @@
   "num": "69",
   "difficulty": "상",
   "image_url": "images/MATH_2_01_C_069.png",
-  "answer": "2 2 5 , 5 / 225 / 0.225",
+  "answer": "",
   "explanation_image": "images/MATH_2_01_C_069_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_1단원"
  },
@@ -27239,7 +27239,7 @@
   "num": "70",
   "difficulty": "상",
   "image_url": "images/MATH_2_01_C_070.png",
-  "answer": "2 2 2 , 2 / 28 / 0.028",
+  "answer": "",
   "explanation_image": "images/MATH_2_01_C_070_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_1단원"
  },
@@ -29129,7 +29129,7 @@
   "num": "5",
   "difficulty": "하",
   "image_url": "images/MATH_2_01_P_005.png",
-  "answer": "2 3 (1) 2× 3 (2) 2 × 3 3 3 2 (3) 2× 3 (4) 2 × 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_01_P_005_ans.png",
   "source": "(동아출판) 중학_수학2_준비학습지_1단원"
  },
@@ -29143,7 +29143,7 @@
   "num": "01",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_001.png",
-  "answer": "6 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_001_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29157,7 +29157,7 @@
   "num": "02",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_002.png",
-  "answer": "7 5",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_002_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29171,7 +29171,7 @@
   "num": "03",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_003.png",
-  "answer": "8 a",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_003_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29185,7 +29185,7 @@
   "num": "04",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_004.png",
-  "answer": "8 x",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_004_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29199,7 +29199,7 @@
   "num": "05",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_005.png",
-  "answer": "10 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_005_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29213,7 +29213,7 @@
   "num": "06",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_006.png",
-  "answer": "a 8",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_006_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29227,7 +29227,7 @@
   "num": "07",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_007.png",
-  "answer": "b 6",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_007_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29241,7 +29241,7 @@
   "num": "08",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_008.png",
-  "answer": "x 11",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_008_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29255,7 +29255,7 @@
   "num": "09",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_009.png",
-  "answer": "7 11",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_009_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29269,7 +29269,7 @@
   "num": "10",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_010.png",
-  "answer": "x 13",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_010_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29283,7 +29283,7 @@
   "num": "11",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_011.png",
-  "answer": "6 4 2 × 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_011_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29297,7 +29297,7 @@
   "num": "12",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_012.png",
-  "answer": "6 7 3 × 5",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_012_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29311,7 +29311,7 @@
   "num": "13",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_013.png",
-  "answer": "7 7 2 × 7",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_013_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29325,7 +29325,7 @@
   "num": "14",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_014.png",
-  "answer": "9 5 x y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_014_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29339,7 +29339,7 @@
   "num": "15",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_015.png",
-  "answer": "11 4 a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_015_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29353,7 +29353,7 @@
   "num": "16",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_016.png",
-  "answer": "6 12 a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_016_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29367,7 +29367,7 @@
   "num": "17",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_017.png",
-  "answer": "3 10 x y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_017_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29381,7 +29381,7 @@
   "num": "18",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_018.png",
-  "answer": "8 10 a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_018_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29395,7 +29395,7 @@
   "num": "19",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_019.png",
-  "answer": "x 10 y 9",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_019_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29409,7 +29409,7 @@
   "num": "20",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_020.png",
-  "answer": "x 8 y 7",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_020_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29423,7 +29423,7 @@
   "num": "21",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_021.png",
-  "answer": "8 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_021_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29437,7 +29437,7 @@
   "num": "22",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_022.png",
-  "answer": "18 7",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_022_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29451,7 +29451,7 @@
   "num": "23",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_023.png",
-  "answer": "20 a",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_023_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29465,7 +29465,7 @@
   "num": "24",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_024.png",
-  "answer": "16 x",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_024_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29479,7 +29479,7 @@
   "num": "25",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_025.png",
-  "answer": "24 y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_025_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29493,7 +29493,7 @@
   "num": "26",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_026.png",
-  "answer": "3 14",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_026_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29507,7 +29507,7 @@
   "num": "27",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_027.png",
-  "answer": "a 22",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_027_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29521,7 +29521,7 @@
   "num": "28",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_028.png",
-  "answer": "b 22",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_028_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29535,7 +29535,7 @@
   "num": "29",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_029.png",
-  "answer": "x 26",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_029_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29549,7 +29549,7 @@
   "num": "30",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_030.png",
-  "answer": "y 21",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_030_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29563,7 +29563,7 @@
   "num": "31",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_031.png",
-  "answer": "9 12 a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_031_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29577,7 +29577,7 @@
   "num": "32",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_032.png",
-  "answer": "9 10 a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_032_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29591,7 +29591,7 @@
   "num": "33",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_033.png",
-  "answer": "15 10 a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_033_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29605,7 +29605,7 @@
   "num": "34",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_034.png",
-  "answer": "12 20 a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_034_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29619,7 +29619,7 @@
   "num": "35",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_035.png",
-  "answer": "18 21 a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_035_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29633,7 +29633,7 @@
   "num": "36",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_036.png",
-  "answer": "26 24 x y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_036_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29647,7 +29647,7 @@
   "num": "37",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_037.png",
-  "answer": "15 26 x y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_037_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29661,7 +29661,7 @@
   "num": "38",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_038.png",
-  "answer": "19 10 a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_038_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29675,7 +29675,7 @@
   "num": "39",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_039.png",
-  "answer": "a 26 b 16",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_039_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29689,7 +29689,7 @@
   "num": "40",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_040.png",
-  "answer": "x 22 y 26",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_040_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29703,7 +29703,7 @@
   "num": "41",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_041.png",
-  "answer": "2 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_041_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29717,7 +29717,7 @@
   "num": "42",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_042.png",
-  "answer": "2 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_042_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29731,7 +29731,7 @@
   "num": "43",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_043.png",
-  "answer": "6 5",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_043_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29759,7 +29759,7 @@
   "num": "45",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_045.png",
-  "answer": "3 a",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_045_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29787,7 +29787,7 @@
   "num": "47",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_047.png",
-  "answer": "x 4",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_047_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29829,7 +29829,7 @@
   "num": "50",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_050.png",
-  "answer": "y 9",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_050_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29885,7 +29885,7 @@
   "num": "54",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_054.png",
-  "answer": "2 a",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_054_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29899,7 +29899,7 @@
   "num": "55",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_055.png",
-  "answer": "14 b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_055_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29913,7 +29913,7 @@
   "num": "56",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_056.png",
-  "answer": "3 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_056_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29969,7 +29969,7 @@
   "num": "60",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_060.png",
-  "answer": "y 5",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_060_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29983,7 +29983,7 @@
   "num": "61",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_061.png",
-  "answer": "8 81a",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_061_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -29997,7 +29997,7 @@
   "num": "62",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_062.png",
-  "answer": "3 15 -a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_062_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30011,7 +30011,7 @@
   "num": "63",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_063.png",
-  "answer": "8 2 a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_063_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30025,7 +30025,7 @@
   "num": "64",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_064.png",
-  "answer": "20 15 a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_064_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30039,7 +30039,7 @@
   "num": "65",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_065.png",
-  "answer": "x 24 y 6",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_065_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30053,7 +30053,7 @@
   "num": "66",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_066.png",
-  "answer": "x 18 y 8",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_066_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30067,7 +30067,7 @@
   "num": "67",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_067.png",
-  "answer": "8x 3 y 18",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_067_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30081,7 +30081,7 @@
   "num": "68",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_068.png",
-  "answer": "25x 12 y 6",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_068_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30095,7 +30095,7 @@
   "num": "69",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_069.png",
-  "answer": "30 6 18 a b c",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_069_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30109,7 +30109,7 @@
   "num": "70",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_070.png",
-  "answer": "6 9 12 -x y z",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_070_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30655,7 +30655,7 @@
   "num": "09",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_109.png",
-  "answer": "-16x 2 y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_109_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30683,7 +30683,7 @@
   "num": "11",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_111.png",
-  "answer": "5 6a",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_111_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30697,7 +30697,7 @@
   "num": "12",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_112.png",
-  "answer": "-3a 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_112_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30711,7 +30711,7 @@
   "num": "13",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_113.png",
-  "answer": "4 30x",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_113_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30725,7 +30725,7 @@
   "num": "14",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_114.png",
-  "answer": "5 -21x",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_114_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30739,7 +30739,7 @@
   "num": "15",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_115.png",
-  "answer": "2 3 22x y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_115_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30753,7 +30753,7 @@
   "num": "16",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_116.png",
-  "answer": "-24xy 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_116_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30767,7 +30767,7 @@
   "num": "17",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_117.png",
-  "answer": "7x 3 y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_117_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30781,7 +30781,7 @@
   "num": "18",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_118.png",
-  "answer": "-5a 4 b 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_118_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30809,7 +30809,7 @@
   "num": "20",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_120.png",
-  "answer": "9x 4 y 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_120_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30823,7 +30823,7 @@
   "num": "21",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_121.png",
-  "answer": "2 4 2a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_121_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30837,7 +30837,7 @@
   "num": "22",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_122.png",
-  "answer": "-72a 3 2 b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_122_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30851,7 +30851,7 @@
   "num": "23",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_123.png",
-  "answer": "2 5 20a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_123_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30865,7 +30865,7 @@
   "num": "24",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_124.png",
-  "answer": "18x 4 y 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_124_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30879,7 +30879,7 @@
   "num": "25",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_125.png",
-  "answer": "-20x 6 y 4",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_125_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30893,7 +30893,7 @@
   "num": "26",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_126.png",
-  "answer": "12x 2 y 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_126_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30907,7 +30907,7 @@
   "num": "27",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_127.png",
-  "answer": "3 3 -60x y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_127_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30921,7 +30921,7 @@
   "num": "28",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_128.png",
-  "answer": "3 4 42x y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_128_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30935,7 +30935,7 @@
   "num": "29",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_129.png",
-  "answer": "4 5 9x y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_129_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30949,7 +30949,7 @@
   "num": "30",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_130.png",
-  "answer": "-32x 6 y 4",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_130_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30963,7 +30963,7 @@
   "num": "31",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_131.png",
-  "answer": "24a 4 b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_131_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30977,7 +30977,7 @@
   "num": "32",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_132.png",
-  "answer": "20x 3 y 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_132_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -30991,7 +30991,7 @@
   "num": "33",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_133.png",
-  "answer": "108x 7 y 7",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_133_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31005,7 +31005,7 @@
   "num": "34",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_134.png",
-  "answer": "-40x 6 y 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_134_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31019,7 +31019,7 @@
   "num": "35",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_135.png",
-  "answer": "-8a 14 b 14",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_135_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31033,7 +31033,7 @@
   "num": "36",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_136.png",
-  "answer": "11 2 -6a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_136_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31047,7 +31047,7 @@
   "num": "37",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_137.png",
-  "answer": "6 5 -54a b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_137_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31061,7 +31061,7 @@
   "num": "38",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_138.png",
-  "answer": "10 5 48x y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_138_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31075,7 +31075,7 @@
   "num": "39",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_139.png",
-  "answer": "-9x 16 11 y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_139_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31117,7 +31117,7 @@
   "num": "42",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_142.png",
-  "answer": "2 -4a",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_142_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31257,7 +31257,7 @@
   "num": "52",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_152.png",
-  "answer": "6a 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_152_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31285,7 +31285,7 @@
   "num": "54",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_154.png",
-  "answer": "2 -12x",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_154_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31341,7 +31341,7 @@
   "num": "58",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_158.png",
-  "answer": "-14xy 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_158_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31383,7 +31383,7 @@
   "num": "61",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_161.png",
-  "answer": "2a 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_161_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31425,7 +31425,7 @@
   "num": "64",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_164.png",
-  "answer": "3x 3 y 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_164_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31453,7 +31453,7 @@
   "num": "66",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_166.png",
-  "answer": "-144xy 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_166_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31467,7 +31467,7 @@
   "num": "67",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_167.png",
-  "answer": "-32xy 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_167_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31495,7 +31495,7 @@
   "num": "69",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_169.png",
-  "answer": "3 -20b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_169_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31607,7 +31607,7 @@
   "num": "77",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_177.png",
-  "answer": "-3a 3 b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_177_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31663,7 +31663,7 @@
   "num": "81",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_181.png",
-  "answer": "3a 4 b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_181_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31677,7 +31677,7 @@
   "num": "82",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_182.png",
-  "answer": "5a 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_182_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31691,7 +31691,7 @@
   "num": "83",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_183.png",
-  "answer": "-14x 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_183_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31719,7 +31719,7 @@
   "num": "85",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_185.png",
-  "answer": "24xy 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_185_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31775,7 +31775,7 @@
   "num": "89",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_189.png",
-  "answer": "12x 5 y 4",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_189_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31803,7 +31803,7 @@
   "num": "91",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_191.png",
-  "answer": "3 6b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_191_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31817,7 +31817,7 @@
   "num": "92",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_192.png",
-  "answer": "2 7x y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_192_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31831,7 +31831,7 @@
   "num": "93",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_193.png",
-  "answer": "2 8x y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_193_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31873,7 +31873,7 @@
   "num": "96",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_196.png",
-  "answer": "-9ab 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_196_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31901,7 +31901,7 @@
   "num": "98",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_198.png",
-  "answer": "21x 6 y 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_198_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31915,7 +31915,7 @@
   "num": "99",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_199.png",
-  "answer": "12x 3 y 4",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_199_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -31929,7 +31929,7 @@
   "num": "100",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_200.png",
-  "answer": "10x 4 y 4",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_200_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -32447,7 +32447,7 @@
   "num": "37",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_237.png",
-  "answer": "5x 2 -7x-6",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_237_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -32503,7 +32503,7 @@
   "num": "41",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_241.png",
-  "answer": "2 4a -15a",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_241_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -32531,7 +32531,7 @@
   "num": "43",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_243.png",
-  "answer": "-2a 2 -3a",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_243_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -32797,7 +32797,7 @@
   "num": "02",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_262.png",
-  "answer": "-8a 2 -5a",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_262_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -32853,7 +32853,7 @@
   "num": "06",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_266.png",
-  "answer": "2 6x -4xy",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_266_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -32881,7 +32881,7 @@
   "num": "08",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_268.png",
-  "answer": "6x 2 -3xy-18x",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_268_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -32909,7 +32909,7 @@
   "num": "10",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_270.png",
-  "answer": "2 28xy-7y -14y",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_270_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -32951,7 +32951,7 @@
   "num": "13",
   "difficulty": "하",
   "image_url": "images/MATH_2_02_C_273.png",
-  "answer": "10a 2 -5ab",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_273_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -33483,7 +33483,7 @@
   "num": "51",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_311.png",
-  "answer": "3 2 -7a -2a",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_311_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -33497,7 +33497,7 @@
   "num": "52",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_312.png",
-  "answer": "3 2 9b -3b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_312_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -33511,7 +33511,7 @@
   "num": "53",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_313.png",
-  "answer": "-36a 3 -6a 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_313_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -33623,7 +33623,7 @@
   "num": "61",
   "difficulty": "중",
   "image_url": "images/MATH_2_02_C_321.png",
-  "answer": "2 9x -2xy",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_321_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -33735,7 +33735,7 @@
   "num": "69",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_329.png",
-  "answer": "4x 2 -xy",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_329_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -33889,7 +33889,7 @@
   "num": "80",
   "difficulty": "상",
   "image_url": "images/MATH_2_02_C_340.png",
-  "answer": "5a 2 b",
+  "answer": "",
   "explanation_image": "images/MATH_2_02_C_340_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_2단원"
  },
@@ -42947,7 +42947,7 @@
   "num": "57",
   "difficulty": "상",
   "image_url": "images/MATH_2_04_C_117.png",
-  "answer": "2x 5x 15cm 2 (1) / (2)",
+  "answer": "",
   "explanation_image": "images/MATH_2_04_C_117_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_4단원"
  },
@@ -42961,7 +42961,7 @@
   "num": "58",
   "difficulty": "상",
   "image_url": "images/MATH_2_04_C_118.png",
-  "answer": "(1) y=160-16x (2) 128cm 2 (3) 4 초 후",
+  "answer": "",
   "explanation_image": "images/MATH_2_04_C_118_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_4단원"
  },
@@ -43073,7 +43073,7 @@
   "num": "01",
   "difficulty": "하",
   "image_url": "images/MATH_2_05_C_001.png",
-  "answer": "∘ 55",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_001_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43087,7 +43087,7 @@
   "num": "02",
   "difficulty": "하",
   "image_url": "images/MATH_2_05_C_002.png",
-  "answer": "∘ 70",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_002_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43101,7 +43101,7 @@
   "num": "03",
   "difficulty": "하",
   "image_url": "images/MATH_2_05_C_003.png",
-  "answer": "∘ 50",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_003_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43115,7 +43115,7 @@
   "num": "04",
   "difficulty": "하",
   "image_url": "images/MATH_2_05_C_004.png",
-  "answer": "∘ 63",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_004_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43129,7 +43129,7 @@
   "num": "05",
   "difficulty": "하",
   "image_url": "images/MATH_2_05_C_005.png",
-  "answer": "∘ 90",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_005_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43143,7 +43143,7 @@
   "num": "06",
   "difficulty": "하",
   "image_url": "images/MATH_2_05_C_006.png",
-  "answer": "110 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_006_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43157,7 +43157,7 @@
   "num": "07",
   "difficulty": "하",
   "image_url": "images/MATH_2_05_C_007.png",
-  "answer": "40 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_007_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43171,7 +43171,7 @@
   "num": "08",
   "difficulty": "하",
   "image_url": "images/MATH_2_05_C_008.png",
-  "answer": "50 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_008_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43185,7 +43185,7 @@
   "num": "09",
   "difficulty": "하",
   "image_url": "images/MATH_2_05_C_009.png",
-  "answer": "140 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_009_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43199,7 +43199,7 @@
   "num": "10",
   "difficulty": "하",
   "image_url": "images/MATH_2_05_C_010.png",
-  "answer": "52 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_010_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43353,7 +43353,7 @@
   "num": "21",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_021.png",
-  "answer": "∘ 12",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_021_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43367,7 +43367,7 @@
   "num": "22",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_022.png",
-  "answer": "∘ 30",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_022_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43381,7 +43381,7 @@
   "num": "23",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_023.png",
-  "answer": "∘ 75",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_023_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43395,7 +43395,7 @@
   "num": "24",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_024.png",
-  "answer": "∘ 115",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_024_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43409,7 +43409,7 @@
   "num": "25",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_025.png",
-  "answer": "∘ 54",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_025_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43423,7 +43423,7 @@
   "num": "26",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_026.png",
-  "answer": "65 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_026_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43437,7 +43437,7 @@
   "num": "27",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_027.png",
-  "answer": "96 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_027_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43451,7 +43451,7 @@
   "num": "28",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_028.png",
-  "answer": "75 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_028_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43465,7 +43465,7 @@
   "num": "29",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_029.png",
-  "answer": "105 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_029_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43479,7 +43479,7 @@
   "num": "30",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_030.png",
-  "answer": "105 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_030_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43493,7 +43493,7 @@
   "num": "31",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_031.png",
-  "answer": "40 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_031_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43507,7 +43507,7 @@
   "num": "32",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_032.png",
-  "answer": "55 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_032_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43521,7 +43521,7 @@
   "num": "33",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_033.png",
-  "answer": "65 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_033_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43535,7 +43535,7 @@
   "num": "34",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_034.png",
-  "answer": "80 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_034_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43549,7 +43549,7 @@
   "num": "35",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_035.png",
-  "answer": "35 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_035_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43563,7 +43563,7 @@
   "num": "36",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_036.png",
-  "answer": "∘ 28",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_036_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43577,7 +43577,7 @@
   "num": "37",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_037.png",
-  "answer": "∘ 120",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_037_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43591,7 +43591,7 @@
   "num": "38",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_038.png",
-  "answer": "∘ 96",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_038_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43605,7 +43605,7 @@
   "num": "39",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_039.png",
-  "answer": "∘ 35",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_039_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -43619,7 +43619,7 @@
   "num": "40",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_040.png",
-  "answer": "∘ 50",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_040_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -44305,7 +44305,7 @@
   "num": "29",
   "difficulty": "상",
   "image_url": "images/MATH_2_05_C_089.png",
-  "answer": "42cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_089_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -44319,7 +44319,7 @@
   "num": "30",
   "difficulty": "상",
   "image_url": "images/MATH_2_05_C_090.png",
-  "answer": "20cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_090_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -44333,7 +44333,7 @@
   "num": "31",
   "difficulty": "상",
   "image_url": "images/MATH_2_05_C_091.png",
-  "answer": "128cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_091_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -44347,7 +44347,7 @@
   "num": "32",
   "difficulty": "상",
   "image_url": "images/MATH_2_05_C_092.png",
-  "answer": "50cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_092_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -44697,7 +44697,7 @@
   "num": "17",
   "difficulty": "하",
   "image_url": "images/MATH_2_05_C_117.png",
-  "answer": "136 ∘",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_117_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -44809,7 +44809,7 @@
   "num": "25",
   "difficulty": "중",
   "image_url": "images/MATH_2_05_C_125.png",
-  "answer": "∘ 35",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_125_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -45033,7 +45033,7 @@
   "num": "41",
   "difficulty": "상",
   "image_url": "images/MATH_2_05_C_141.png",
-  "answer": "∘ 33",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_141_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -45201,7 +45201,7 @@
   "num": "53",
   "difficulty": "상",
   "image_url": "images/MATH_2_05_C_153.png",
-  "answer": "∘ 22",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_153_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -45257,7 +45257,7 @@
   "num": "57",
   "difficulty": "상",
   "image_url": "images/MATH_2_05_C_157.png",
-  "answer": "∘ 35",
+  "answer": "",
   "explanation_image": "images/MATH_2_05_C_157_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_5단원"
  },
@@ -46349,7 +46349,7 @@
   "num": "71",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_071.png",
-  "answer": "2 30cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_071_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46363,7 +46363,7 @@
   "num": "72",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_072.png",
-  "answer": "2 30cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_072_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46377,7 +46377,7 @@
   "num": "73",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_073.png",
-  "answer": "2 15cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_073_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46391,7 +46391,7 @@
   "num": "74",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_074.png",
-  "answer": "15cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_074_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46405,7 +46405,7 @@
   "num": "75",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_075.png",
-  "answer": "30cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_075_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46419,7 +46419,7 @@
   "num": "76",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_076.png",
-  "answer": "30cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_076_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46433,7 +46433,7 @@
   "num": "77",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_077.png",
-  "answer": "18cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_077_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46447,7 +46447,7 @@
   "num": "78",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_078.png",
-  "answer": "8cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_078_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46461,7 +46461,7 @@
   "num": "79",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_079.png",
-  "answer": "28cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_079_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46475,7 +46475,7 @@
   "num": "80",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_080.png",
-  "answer": "2 5cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_080_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46489,7 +46489,7 @@
   "num": "81",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_081.png",
-  "answer": "2 8cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_081_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46503,7 +46503,7 @@
   "num": "82",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_082.png",
-  "answer": "20cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_082_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46517,7 +46517,7 @@
   "num": "83",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_083.png",
-  "answer": "12cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_083_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46531,7 +46531,7 @@
   "num": "84",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_084.png",
-  "answer": "11cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_084_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46545,7 +46545,7 @@
   "num": "85",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_085.png",
-  "answer": "17cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_085_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46559,7 +46559,7 @@
   "num": "86",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_086.png",
-  "answer": "27cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_086_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46573,7 +46573,7 @@
   "num": "87",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_087.png",
-  "answer": "6cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_087_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46587,7 +46587,7 @@
   "num": "88",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_088.png",
-  "answer": "13cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_088_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46629,7 +46629,7 @@
   "num": "91",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_091.png",
-  "answer": "8cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_091_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46643,7 +46643,7 @@
   "num": "92",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_092.png",
-  "answer": "4cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_092_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46685,7 +46685,7 @@
   "num": "95",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_095.png",
-  "answer": "27cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_095_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46699,7 +46699,7 @@
   "num": "96",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_096.png",
-  "answer": "15cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_096_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46713,7 +46713,7 @@
   "num": "97",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_097.png",
-  "answer": "30cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_097_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46727,7 +46727,7 @@
   "num": "98",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_098.png",
-  "answer": "27cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_098_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46741,7 +46741,7 @@
   "num": "99",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_099.png",
-  "answer": "2 9cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_099_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -46755,7 +46755,7 @@
   "num": "100",
   "difficulty": "상",
   "image_url": "images/MATH_2_06_C_100.png",
-  "answer": "2 12cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_C_100_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_6단원"
  },
@@ -48211,7 +48211,7 @@
   "num": "4",
   "difficulty": "하",
   "image_url": "images/MATH_2_06_P_004.png",
-  "answer": "(1) 9cm 2 (2) 10cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_06_P_004_ans.png",
   "source": "(동아출판) 중학_수학2_준비학습지_6단원"
  },
@@ -49107,7 +49107,7 @@
   "num": "64",
   "difficulty": "중",
   "image_url": "images/MATH_2_07_C_064.png",
-  "answer": "64cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_064_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -49177,7 +49177,7 @@
   "num": "69",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_069.png",
-  "answer": "2 150cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_069_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -49457,7 +49457,7 @@
   "num": "89",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_089.png",
-  "answer": "48cm 3",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_089_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -49513,7 +49513,7 @@
   "num": "93",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_093.png",
-  "answer": "225cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_093_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -49569,7 +49569,7 @@
   "num": "97",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_097.png",
-  "answer": "3 375πcm",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_097_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -50787,7 +50787,7 @@
   "num": "34",
   "difficulty": "중",
   "image_url": "images/MATH_2_07_C_184.png",
-  "answer": "12cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_184_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -50801,7 +50801,7 @@
   "num": "35",
   "difficulty": "중",
   "image_url": "images/MATH_2_07_C_185.png",
-  "answer": "32cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_185_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -50815,7 +50815,7 @@
   "num": "36",
   "difficulty": "중",
   "image_url": "images/MATH_2_07_C_186.png",
-  "answer": "36cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_186_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -50829,7 +50829,7 @@
   "num": "37",
   "difficulty": "중",
   "image_url": "images/MATH_2_07_C_187.png",
-  "answer": "35cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_187_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -50843,7 +50843,7 @@
   "num": "38",
   "difficulty": "중",
   "image_url": "images/MATH_2_07_C_188.png",
-  "answer": "2 20cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_188_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -50857,7 +50857,7 @@
   "num": "39",
   "difficulty": "중",
   "image_url": "images/MATH_2_07_C_189.png",
-  "answer": "2 20cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_189_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -51193,7 +51193,7 @@
   "num": "63",
   "difficulty": "중",
   "image_url": "images/MATH_2_07_C_213.png",
-  "answer": "2 9cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_213_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52047,7 +52047,7 @@
   "num": "24",
   "difficulty": "중",
   "image_url": "images/MATH_2_07_C_274.png",
-  "answer": "2 6cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_274_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52061,7 +52061,7 @@
   "num": "25",
   "difficulty": "중",
   "image_url": "images/MATH_2_07_C_275.png",
-  "answer": "2 12cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_275_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52075,7 +52075,7 @@
   "num": "26",
   "difficulty": "중",
   "image_url": "images/MATH_2_07_C_276.png",
-  "answer": "12cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_276_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52089,7 +52089,7 @@
   "num": "27",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_277.png",
-  "answer": "24cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_277_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52103,7 +52103,7 @@
   "num": "28",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_278.png",
-  "answer": "9cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_278_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52117,7 +52117,7 @@
   "num": "29",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_279.png",
-  "answer": "18cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_279_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52131,7 +52131,7 @@
   "num": "30",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_280.png",
-  "answer": "18cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_280_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52145,7 +52145,7 @@
   "num": "31",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_281.png",
-  "answer": "2 30cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_281_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52159,7 +52159,7 @@
   "num": "32",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_282.png",
-  "answer": "2 27cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_282_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52173,7 +52173,7 @@
   "num": "33",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_283.png",
-  "answer": "2 24cm",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_283_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52187,7 +52187,7 @@
   "num": "34",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_284.png",
-  "answer": "5cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_284_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52257,7 +52257,7 @@
   "num": "39",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_289.png",
-  "answer": "8cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_289_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
@@ -52271,7 +52271,7 @@
   "num": "40",
   "difficulty": "상",
   "image_url": "images/MATH_2_07_C_290.png",
-  "answer": "4cm 2",
+  "answer": "",
   "explanation_image": "images/MATH_2_07_C_290_ans.png",
   "source": "(동아출판) 중학_수학2_연산학습지_7단원"
  },
