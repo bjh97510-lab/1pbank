@@ -7,7 +7,7 @@
 <style>
   :root{--bg:#f4f5f7;--panel:#fff;--line:#d9dce3;--accent:#2563eb;--danger:#dc2626;--text:#1f2937}
   *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,"Malgun Gothic",sans-serif;background:var(--bg);color:var(--text);display:grid;grid-template-columns:300px 1fr;height:100vh}
+  body{margin:0;font-family:system-ui,"Malgun Gothic",sans-serif;background:var(--bg);color:var(--text);display:grid;grid-template-columns:320px 1fr;height:100vh}
   aside{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
   aside header{padding:12px;border-bottom:1px solid var(--line)}
   aside h1{font-size:15px;margin:0 0 8px}
@@ -29,9 +29,11 @@
   #overlay{position:absolute;inset:0;cursor:crosshair}
   .box{position:absolute;border:2px solid var(--accent);background:rgba(37,99,235,.08);cursor:move}
   .box.sel{border-color:var(--danger);background:rgba(220,38,38,.1)}
-  .box .n{position:absolute;left:-2px;top:-20px;background:var(--accent);color:#fff;font-size:11px;padding:1px 5px;border-radius:3px}
+  .box .n{position:absolute;left:-2px;top:-20px;background:var(--accent);color:#fff;font-size:11px;padding:1px 5px;border-radius:3px;white-space:nowrap}
   .box.sel .n{background:var(--danger)}
   .box .h{position:absolute;right:-6px;bottom:-6px;width:12px;height:12px;background:#fff;border:2px solid var(--accent);cursor:nwse-resize}
+  .hdrbox{position:absolute;border:2px dashed #16a34a;background:rgba(22,163,74,.06);pointer-events:none}
+  .erase{position:absolute;background:rgba(0,0,0,.25);pointer-events:none}
   .hint{color:#6b7280;font-size:12px;padding:0 12px 8px}
   input[type=range]{width:120px}
 </style>
@@ -46,7 +48,7 @@
       <button class="btn primary" id="btnSave" disabled>저장</button>
     </div>
   </header>
-  <div class="hint">프로젝트 루트에서 서버를 띄워 열면 <code>/work/crops.json</code> 을 자동으로 읽습니다.</div>
+  <div class="hint">프로젝트 루트에서 <code>python -m http.server 8000</code> 후 열면 <code>/work/crops.json</code> 을 자동으로 읽습니다.</div>
   <div id="tree"></div>
 </aside>
 <main>
@@ -54,11 +56,10 @@
     <span id="title">페이지를 선택하세요</span>
     <span class="sp"></span>
     <label>확대 <input type="range" id="zoom" min="20" max="120" value="45"></label>
-    <button class="btn" id="btnSort" disabled>번호 재정렬(단→위→아래)</button>
     <button class="btn danger" id="btnDel" disabled>선택 삭제 (Del)</button>
-    <button class="btn danger" id="btnClear" disabled>이 페이지 전체 삭제</button>
   </div>
-  <div class="hint">빈 곳 드래그 = 새 영역 · 영역 드래그 = 이동 · 우하단 핸들 = 크기 조절 · 클릭 후 Del = 삭제 · 저장은 Chrome/Edge 에서 work/crops.json 을 직접 덮어쓸 수 있습니다.</div>
+  <div class="hint">파란 상자 = 문항 본문(번호 표시), 초록 점선 = 그 문항에 붙는 묶음 지시문, 회색 = 흰색으로 지워지는 번호/라벨.
+    빈 곳 드래그 = 새 영역 · 상자 드래그 = 이동 · 우하단 핸들 = 크기 · 클릭 후 Del = 삭제 · 저장은 Chrome/Edge 에서 work/crops.json 을 직접 덮어씁니다.</div>
   <div id="stage"><div id="wrap" hidden><img id="pageImg" alt=""><div id="overlay"></div></div></div>
 </main>
 <script>
@@ -107,52 +108,59 @@
   function toast(m) { $('#title').textContent = m; }
 
   // ---- 트리 ----
+  function pageItems(doc, i) { return doc.items.filter(it => it.page === i); }
   function render() {
     tree.innerHTML = '';
     $('#btnSave').disabled = false;
     for (const [stem, doc] of Object.entries(data.docs)) {
       const d = document.createElement('div'); d.className = 'doc';
-      const total = doc.pages.reduce((s, p) => s + p.boxes.length, 0);
-      d.textContent = stem + '  (' + total + ')';
+      d.textContent = stem + '  (' + doc.items.length + ')';
       tree.appendChild(d);
       doc.pages.forEach((p, i) => {
         const el = document.createElement('div'); el.className = 'page';
-        el.innerHTML = 'p' + (i + 1) + ' <small>' + p.boxes.length + '개</small>';
+        el.innerHTML = 'p' + (i + 1) + ' <small>' + pageItems(doc, i).length + '개</small>';
         el.onclick = () => { open(stem, i); [...tree.querySelectorAll('.page')].forEach(x => x.classList.remove('active')); el.classList.add('active'); };
         tree.appendChild(el);
       });
     }
   }
   function open(stem, i) {
-    cur = {stem, i, page: data.docs[stem].pages[i]}; sel = -1;
+    cur = {stem, i, doc: data.docs[stem], page: data.docs[stem].pages[i]}; sel = -1;
     img.src = '/' + cur.page.image + '?t=' + Date.now();
     img.onload = () => { wrap.hidden = false; layout(); };
     img.onerror = () => { toast('이미지를 찾을 수 없음: ' + cur.page.image + ' (프로젝트 루트에서 서버를 띄웠는지 확인)'); };
     $('#title').textContent = stem + ' · ' + (i + 1) + '페이지';
-    ['#btnSort', '#btnDel', '#btnClear'].forEach(s => $(s).disabled = false);
+    $('#btnDel').disabled = false;
   }
   $('#zoom').oninput = e => { scale = e.target.value / 100; layout(); };
 
   // ---- 박스 렌더 ----
+  function place(el, b) {
+    el.style.left = b.x * scale + 'px'; el.style.top = b.y * scale + 'px';
+    el.style.width = b.w * scale + 'px'; el.style.height = b.h * scale + 'px';
+  }
   function layout() {
     if (!cur) return;
-    const W = cur.page.width, H = cur.page.height;
-    img.style.width = W * scale + 'px'; img.style.height = H * scale + 'px';
+    img.style.width = cur.page.width * scale + 'px'; img.style.height = cur.page.height * scale + 'px';
     ov.innerHTML = '';
-    cur.page.boxes.forEach((b, k) => {
+    cur.doc.items.forEach((it, k) => {
+      [...(it.erase || []), ...((it.header && it.header.erase) || [])].forEach(e => {
+        if (e.page !== cur.i) return;
+        const el = document.createElement('div'); el.className = 'erase'; place(el, e); ov.appendChild(el);
+      });
+      if (it.header && it.header.page === cur.i && it.page === cur.i) {
+        const el = document.createElement('div'); el.className = 'hdrbox'; place(el, it.header); ov.appendChild(el);
+      }
+      if (it.page !== cur.i) return;
       const el = document.createElement('div');
       el.className = 'box' + (k === sel ? ' sel' : '');
-      el.style.left = b.x * scale + 'px'; el.style.top = b.y * scale + 'px';
-      el.style.width = b.w * scale + 'px'; el.style.height = b.h * scale + 'px';
-      el.innerHTML = '<span class="n">' + (k + 1) + '</span><span class="h"></span>';
+      place(el, it.box);
+      el.innerHTML = '<span class="n">#' + it.seq + ' (' + it.num + ')' + (it.text ? ' ' + it.text.slice(0, 18) : '') + '</span><span class="h"></span>';
       el.onpointerdown = e => startDrag(e, k, e.target.classList.contains('h') ? 'resize' : 'move');
       ov.appendChild(el);
     });
-    refreshCounts();
-  }
-  function refreshCounts() {
     const active = tree.querySelector('.page.active');
-    if (active) active.innerHTML = 'p' + (cur.i + 1) + ' <small>' + cur.page.boxes.length + '개</small>';
+    if (active) active.innerHTML = 'p' + (cur.i + 1) + ' <small>' + pageItems(cur.doc, cur.i).length + '개</small>';
   }
 
   // ---- 드래그: 생성 / 이동 / 리사이즈 ----
@@ -161,14 +169,16 @@
     if (e.target !== ov) return;
     const r = ov.getBoundingClientRect();
     const x = (e.clientX - r.left) / scale, y = (e.clientY - r.top) / scale;
-    cur.page.boxes.push({x: Math.round(x), y: Math.round(y), w: 1, h: 1});
-    sel = cur.page.boxes.length - 1;
+    const maxSeq = cur.doc.items.reduce((m, it) => Math.max(m, it.seq), 0);
+    cur.doc.items.push({seq: maxSeq + 1, num: '??', section: 1, page: cur.i,
+      box: {x: Math.round(x), y: Math.round(y), w: 1, h: 1}, header: null, erase: [], text: ''});
+    sel = cur.doc.items.length - 1;
     drag = {mode: 'create', k: sel, ox: x, oy: y};
     ov.setPointerCapture(e.pointerId); layout();
   };
   function startDrag(e, k, mode) {
     e.stopPropagation(); e.preventDefault();
-    sel = k; const b = cur.page.boxes[k];
+    sel = k; const b = cur.doc.items[k].box;
     const r = ov.getBoundingClientRect();
     drag = {mode, k, ox: (e.clientX - r.left) / scale, oy: (e.clientY - r.top) / scale, b0: {...b}};
     ov.setPointerCapture(e.pointerId); layout();
@@ -177,7 +187,7 @@
     if (!drag) return;
     const r = ov.getBoundingClientRect();
     const x = (e.clientX - r.left) / scale, y = (e.clientY - r.top) / scale;
-    const b = cur.page.boxes[drag.k];
+    const b = cur.doc.items[drag.k].box;
     if (drag.mode === 'create') {
       b.x = Math.round(Math.min(x, drag.ox)); b.y = Math.round(Math.min(y, drag.oy));
       b.w = Math.round(Math.abs(x - drag.ox)); b.h = Math.round(Math.abs(y - drag.oy));
@@ -190,26 +200,16 @@
   };
   ov.onpointerup = () => {
     if (drag && drag.mode === 'create') {
-      const b = cur.page.boxes[drag.k];
-      if (b.w < 15 || b.h < 15) { cur.page.boxes.splice(drag.k, 1); sel = -1; }
+      const b = cur.doc.items[drag.k].box;
+      if (b.w < 15 || b.h < 15) { cur.doc.items.splice(drag.k, 1); sel = -1; }
     }
     drag = null; layout();
   };
 
-  // ---- 편집 명령 ----
-  function del() { if (sel >= 0) { cur.page.boxes.splice(sel, 1); sel = -1; layout(); } }
+  // ---- 삭제 ----
+  function del() { if (sel >= 0) { cur.doc.items.splice(sel, 1); sel = -1; layout(); } }
   $('#btnDel').onclick = del;
   document.addEventListener('keydown', e => { if ((e.key === 'Delete' || e.key === 'Backspace') && cur && document.activeElement.tagName !== 'INPUT') del(); });
-  $('#btnClear').onclick = () => { if (confirm('이 페이지의 영역을 모두 삭제할까요?')) { cur.page.boxes = []; sel = -1; layout(); } };
-  $('#btnSort').onclick = () => {
-    // 왼쪽 단 → 오른쪽 단, 각 단은 위 → 아래. 박스 중심 x 가 페이지 중앙 기준.
-    const mid = cur.page.width / 2;
-    cur.page.boxes.sort((a, b) => {
-      const ca = (a.x + a.w / 2) < mid ? 0 : 1, cb = (b.x + b.w / 2) < mid ? 0 : 1;
-      return ca !== cb ? ca - cb : a.y - b.y;
-    });
-    sel = -1; layout();
-  };
 
   tryFetch();
 })();
