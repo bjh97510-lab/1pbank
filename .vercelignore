@@ -1,0 +1,10 @@
+# 정적 사이트(web/)만 배포. 나머지는 업로드하지 않음
+scripts/
+tools/
+config/
+source/
+work/
+*.zip
+*.hwp
+*.md
+.venv/

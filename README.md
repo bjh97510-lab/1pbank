@@ -6,14 +6,15 @@ A4 시험지 / 정답·해설지를 브라우저에서 생성·인쇄하는 프�
 ```
 1pbank/
 ├─ (동아출판) ...zip          # 원본 자료
-├─ requirements.txt
+├─ vercel.json              # Vercel 정적 배포 설정 (web/ 폴더만 서빙)
 ├─ config/units.json           # 학년별 단원명, 학습지 종류 → 난이도 매핑 (수정 가능)
 ├─ scripts/
 │   ├─ 00_unzip.py             # ZIP → source/*.hwp (한글 파일명 복원)
 │   ├─ 01_hwp_to_pdf.py        # HWP → work/pdf/*.pdf   (한글 COM 자동화)
 │   ├─ 02_pdf_to_pages.py      # PDF → work/pages/*.png + 문항 영역 자동 탐지 → work/crops.json
 │   ├─ 03_build_problems.py    # crops.json → web/images/*.png + web/problems.json
-│   └─ common.py               # 파일명 파서 / ID 생성
+│   ├─ common.py               # 파일명 파서 / ID 생성
+│   └─ requirements.txt        # Python 의존성
 ├─ tools/crop_editor.html      # 자동 탐지된 문항 영역을 눈으로 확인·수정하는 도구
 └─ web/
     ├─ index.html              # 학습지 생성 웹 앱 (단일 파일, Tailwind CDN)
@@ -38,7 +39,7 @@ A4 시험지 / 정답·해설지를 브라우저에서 생성·인쇄하는 프�
    cd C:\project\1pbank
    python -m venv .venv
    .\.venv\Scripts\Activate.ps1
-   pip install -r requirements.txt
+   pip install -r scripts/requirements.txt
    ```
 
 ---
@@ -140,7 +141,13 @@ http://localhost:8000 접속 → `problems.json` 자동 로드.
 3. **로컬 미리보기**: Antigravity 터미널에서 `python -m http.server 8000 --directory web` 실행 후
    내장 브라우저/프리뷰로 http://localhost:8000 을 엽니다. (Live Server 류 확장을 쓸 경우 루트를 `web/` 으로 지정)
 4. **배포**:
-   - 가장 단순: `web/` 폴더를 그대로 Netlify Drop / GitHub Pages / Vercel 정적 사이트로 업로드.
+   - **Vercel**: GitHub 저장소를 Import 하면 끝. 루트의 `vercel.json` 이 "빌드 없음, `web/` 폴더를 정적으로 서빙" 으로 설정되어 있고,
+     `.vercelignore` 가 스크립트·원본 자료를 업로드에서 제외합니다. (설정이 없으면 Vercel 이 requirements.txt 를 보고
+     Python 앱으로 오인해 `PYTHON_ENTRYPOINT_NOT_FOUND` 오류가 납니다.)
+     단, `web/problems.json` 과 `web/images/` 는 .gitignore 로 제외되어 있으므로 실제 문항을 배포하려면
+     `.gitignore` 에서 그 두 줄을 지우고 커밋하거나, 이미지를 외부 스토리지에 올리고 URL 을 절대경로로 바꿔야 합니다.
+     데이터 없이 배포된 상태에서는 앱의 **데모 데이터** 버튼으로만 동작합니다.
+   - 그 외: `web/` 폴더를 그대로 Netlify Drop / GitHub Pages 에 업로드.
    - 사내망: `web/` 을 IIS·Nginx 의 정적 폴더에 복사.
    - 문항 이미지가 수천 장이면 `images/` 만 별도 CDN/스토리지에 두고 `problems.json` 의 `image_url` 을 절대 URL 로 바꾸면 됩니다
      (3단계 스크립트 실행 후 `sed`/파이썬으로 접두어 치환).
