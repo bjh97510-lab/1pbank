@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>수학 학습지 생성기</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{ --page-w:210mm; --page-h:297mm; --page-pad:14mm; --col-gap:8mm; }
+  body{background:#e5e7eb;font-family:system-ui,"Malgun Gothic","Apple SD Gothic Neo",sans-serif}
+
+  /* ---------- A4 시험지 ---------- */
+  .sheet{
+    width:var(--page-w);height:var(--page-h);padding:var(--page-pad);
+    background:#fff;margin:0 auto 10mm;box-shadow:0 2px 12px rgba(0,0,0,.18);
+    display:flex;flex-direction:column;position:relative;overflow:hidden;
+  }
+  .sheet .hdr{border-bottom:2px solid #111;padding-bottom:3mm;margin-bottom:4mm}
+  .sheet .hdr h1{font-size:17pt;font-weight:800;letter-spacing:-.02em;margin:0}
+  .sheet .hdr .sub{display:flex;justify-content:space-between;align-items:flex-end;font-size:9.5pt;color:#374151;margin-top:2mm}
+  .sheet .hdr .blank{display:inline-block;border-bottom:1px solid #111;min-width:28mm;margin-left:1.5mm}
+  .sheet .cols{flex:1;display:grid;grid-template-columns:1fr 1fr;column-gap:var(--col-gap);min-height:0;position:relative}
+  .sheet .cols::before{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:1px dashed #cbd5e1}
+  .sheet .col{display:flex;flex-direction:column;min-height:0}
+  .item{break-inside:avoid;margin-bottom:5mm;position:relative}
+  .item .num{display:inline-flex;align-items:center;justify-content:center;width:6.5mm;height:6.5mm;border-radius:999px;background:#111;color:#fff;font-weight:700;font-size:9pt;margin-bottom:1.5mm}
+  .item .meta{font-size:7.5pt;color:#9ca3af;margin-left:2mm;vertical-align:middle}
+  .item img{display:block;width:100%;height:auto;max-height:235mm;object-fit:contain;object-position:left top}
+  .item .swap{position:absolute;right:0;top:0;font-size:10px;background:#f3f4f6;border:1px solid #d1d5db;border-radius:4px;padding:1px 5px;cursor:pointer;opacity:0;transition:opacity .15s}
+  .item:hover .swap{opacity:1}
+  .sheet .ftr{position:absolute;bottom:6mm;left:0;right:0;text-align:center;font-size:8pt;color:#6b7280}
+  .anstable{width:100%;border-collapse:collapse;font-size:9.5pt;margin-bottom:4mm}
+  .anstable td,.anstable th{border:1px solid #9ca3af;padding:1.2mm 1.5mm;text-align:center}
+  .anstable th{background:#f3f4f6}
+
+  /* 측정용 숨김 영역 */
+  #measure{position:absolute;left:-9999px;top:0;visibility:hidden;pointer-events:none}
+  #measure .sheet{margin:0;box-shadow:none}
+
+  /* ---------- 인쇄 ---------- */
+  @page{size:A4;margin:0}
+  @media print{
+    body{background:#fff}
+    .no-print{display:none !important}
+    #app{display:block !important;max-width:none !important;padding:0 !important;margin:0 !important}
+    #preview{padding:0 !important}
+    .sheet{margin:0;box-shadow:none;break-after:page;page-break-after:always}
+    .sheet:last-child{break-after:auto;page-break-after:auto}
+    .item .swap{display:none}
+  }
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- ================= 상단 바 ================= -->
+<header class="no-print bg-white border-b sticky top-0 z-20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center gap-3">
+    <h1 class="text-lg font-bold mr-2">📝 수학 학습지 생성기</h1>
+    <span id="dbStatus" class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">문제 DB 로딩 중…</span>
+    <div class="ml-auto flex items-center gap-2">
+      <label class="text-xs text-gray-600 cursor-pointer px-2 py-1 border rounded hover:bg-gray-50">
+        problems.json 직접 열기 <input id="jsonFile" type="file" accept=".json" class="hidden">
+      </label>
+      <button id="btnDemo" class="text-xs px-2 py-1 border rounded hover:bg-gray-50">데모 데이터</button>
+    </div>
+  </div>
+</header>
+
+<div id="app" class="max-w-7xl mx-auto px-4 py-4 grid lg:grid-cols-[340px_1fr] gap-4">
+  <!-- ================= 컨트롤 패널 ================= -->
+  <aside class="no-print space-y-4">
+    <section class="bg-white rounded-xl shadow-sm p-4 space-y-4">
+      <div>
+        <label class="block text-sm font-semibold mb-1">학년</label>
+        <div id="gradeBox" class="flex gap-2"></div>
+      </div>
+      <div>
+        <div class="flex justify-between items-center mb-1">
+          <label class="text-sm font-semibold">단원</label>
+          <div class="text-xs space-x-2">
+            <button class="text-blue-600 hover:underline" id="unitAll">전체</button>
+            <button class="text-gray-500 hover:underline" id="unitNone">해제</button>
+          </div>
+        </div>
+        <div id="unitBox" class="space-y-1 max-h-56 overflow-auto border rounded-lg p-2 text-sm"></div>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold mb-1">학습지 종류</label>
+        <div id="sheetBox" class="flex flex-wrap gap-2 text-sm"></div>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold mb-1">문항 수 / 난이도</label>
+        <div class="flex gap-2 text-sm mb-2">
+          <label class="flex items-center gap-1"><input type="radio" name="mode" value="total" checked> 전체 문항 수</label>
+          <label class="flex items-center gap-1"><input type="radio" name="mode" value="each"> 난이도별 지정</label>
+        </div>
+        <div id="modeTotal" class="flex items-center gap-2 text-sm">
+          <input id="total" type="number" min="1" max="60" value="20" class="w-20 border rounded px-2 py-1">
+          <span class="text-gray-500">문항, 상:중:하 =</span>
+          <input id="rH" type="number" min="0" value="2" class="w-12 border rounded px-1 py-1 text-center">
+          <input id="rM" type="number" min="0" value="5" class="w-12 border rounded px-1 py-1 text-center">
+          <input id="rL" type="number" min="0" value="3" class="w-12 border rounded px-1 py-1 text-center">
+        </div>
+        <div id="modeEach" class="hidden grid-cols-3 gap-2 text-sm">
+          <label>상 <input id="nH" type="number" min="0" value="4" class="w-full border rounded px-2 py-1"></label>
+          <label>중 <input id="nM" type="number" min="0" value="10" class="w-full border rounded px-2 py-1"></label>
+          <label>하 <input id="nL" type="number" min="0" value="6" class="w-full border rounded px-2 py-1"></label>
+        </div>
+        <label class="flex items-center gap-2 text-xs text-gray-600 mt-2">
+          <input id="fill" type="checkbox" checked> 부족한 난이도는 다른 난이도로 채우기
+        </label>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold mb-1">시험지 제목</label>
+        <input id="title" class="w-full border rounded px-2 py-1 text-sm" placeholder="비우면 자동 생성 (예: 중학교 2학년 수학 형성평가)">
+        <div class="grid grid-cols-2 gap-2 mt-2 text-sm">
+          <input id="school" class="border rounded px-2 py-1" placeholder="학교/학원명 (선택)">
+          <input id="date" class="border rounded px-2 py-1" placeholder="날짜 (선택)">
+        </div>
+        <label class="flex items-center gap-2 text-xs text-gray-600 mt-2">
+          <input id="showMeta" type="checkbox"> 문항 옆에 단원·난이도 표시 (교사용)
+        </label>
+      </div>
+      <button id="btnGen" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-lg disabled:opacity-40" disabled>학습지 생성하기</button>
+      <div id="warn" class="hidden text-sm rounded-lg p-3 bg-amber-50 border border-amber-300 text-amber-800"></div>
+      <div id="pool" class="text-xs text-gray-500"></div>
+    </section>
+  </aside>
+
+  <!-- ================= 미리보기 ================= -->
+  <main class="min-w-0">
+    <div class="no-print flex flex-wrap items-center gap-2 mb-3">
+      <div class="inline-flex rounded-lg border bg-white overflow-hidden text-sm">
+        <button data-tab="exam" class="tab px-4 py-2 font-semibold bg-blue-600 text-white">시험지</button>
+        <button data-tab="answer" class="tab px-4 py-2 font-semibold hover:bg-gray-50">정답 및 해설지</button>
+      </div>
+      <span id="pageInfo" class="text-sm text-gray-600"></span>
+      <div class="ml-auto flex gap-2">
+        <button id="btnReshuffle" class="text-sm px-3 py-2 border rounded-lg bg-white hover:bg-gray-50 disabled:opacity-40" disabled>🔀 다시 섞기</button>
+        <button id="btnPrint" class="text-sm px-3 py-2 rounded-lg bg-gray-900 text-white hover:bg-black disabled:opacity-40" disabled>🖨 인쇄 / PDF 저장</button>
+      </div>
+    </div>
+    <div id="preview" class="py-2">
+      <div class="text-center text-gray-500 py-24 bg-white rounded-xl border border-dashed">조건을 선택하고 <b>학습지 생성하기</b>를 누르세요.</div>
+    </div>
+  </main>
+</div>
+<div id="measure"></div>
+
+<script>
+(() => {
+  'use strict';
+  const $ = s => document.querySelector(s);
+  const $$ = s => [...document.querySelectorAll(s)];
+  const DIFFS = ['상', '중', '하'];
+  const PX_PER_MM = 96 / 25.4;
+
+  let DB = [];            // 전체 문제
+  let selected = [];      // 생성된 학습지 문항 (출제 순서)
+  let tab = 'exam';
+  const imgCache = new Map();
+
+  // ---------------- 데이터 로드 ----------------
+  async function loadDB() {
+    try {
+      const r = await fetch('problems.json', {cache: 'no-store'});
+      if (!r.ok) throw new Error(r.status);
+      setDB(await r.json(), 'problems.json');
+    } catch (e) {
+      $('#dbStatus').textContent = 'problems.json 을 불러올 수 없습니다. 서버로 열거나, 파일을 직접 열거나, 데모 데이터를 사용하세요.';
+      $('#dbStatus').className = 'text-xs px-2 py-1 rounded bg-red-50 text-red-700';
+    }
+  }
+  function setDB(list, src) {
+    DB = list.filter(p => p.grade && p.image_url).map(p => ({
+      ...p,
+      difficulty: DIFFS.includes(p.difficulty) ? p.difficulty : '중',
+      unit: p.unit || ((p.unit_no ?? '?') + '. 단원'),
+    }));
+    imgCache.clear();
+    $('#dbStatus').textContent = src + ': ' + DB.length + '문항 로드됨';
+    $('#dbStatus').className = 'text-xs px-2 py-1 rounded bg-green-50 text-green-700';
+    buildFilters();
+    $('#btnGen').disabled = DB.length === 0;
+  }
+  $('#jsonFile').onchange = async e => {
+    const f = e.target.files[0]; if (!f) return;
+    try { setDB(JSON.parse(await f.text()), f.name); }
+    catch (err) { alert('JSON 파싱 실패: ' + err.message); }
+  };
+  $('#btnDemo').onclick = () => setDB(makeDemo(), '데모 데이터');
+
+  // ---------------- 필터 UI ----------------
+  function buildFilters() {
+    const grades = [...new Set(DB.map(p => p.grade))].sort();
+    $('#gradeBox').innerHTML = grades.map((g, i) =>
+      `<label class="flex-1 text-center border rounded-lg py-1.5 text-sm cursor-pointer has-[:checked]:bg-blue-600 has-[:checked]:text-white has-[:checked]:border-blue-600">
+         <input type="radio" name="grade" value="${esc(g)}" class="hidden" ${i === 0 ? 'checked' : ''}>${esc(g)}</label>`).join('');
+    $$('input[name=grade]').forEach(r => r.onchange = buildUnits);
+    buildUnits();
+  }
+  function curGrade() { const r = $('input[name=grade]:checked'); return r ? r.value : ''; }
+  function buildUnits() {
+    const g = curGrade();
+    const units = [...new Set(DB.filter(p => p.grade === g).map(p => p.unit))]
+      .sort((a, b) => ((parseInt(a) || 0) - (parseInt(b) || 0)) || a.localeCompare(b, 'ko'));
+    $('#unitBox').innerHTML = units.map(u => {
+      const cnt = DIFFS.map(d => DB.filter(p => p.grade === g && p.unit === u && p.difficulty === d).length);
+      return `<label class="flex items-center gap-2 hover:bg-gray-50 rounded px-1">
+        <input type="checkbox" class="unit" value="${esc(u)}" checked>
+        <span class="flex-1 truncate">${esc(u)}</span>
+        <span class="text-[11px] text-gray-400">상${cnt[0]}·중${cnt[1]}·하${cnt[2]}</span></label>`;
+    }).join('') || '<div class="text-gray-400">단원 정보 없음</div>';
+    $$('.unit').forEach(c => c.onchange = updatePool);
+    buildSheets();
+    updatePool();
+  }
+  function buildSheets() {
+    const g = curGrade();
+    const types = [...new Set(DB.filter(p => p.grade === g).map(p => p.sheet_type || '기타'))];
+    $('#sheetBox').innerHTML = types.map(t =>
+      `<label class="flex items-center gap-1 border rounded px-2 py-1 cursor-pointer has-[:checked]:bg-gray-800 has-[:checked]:text-white">
+        <input type="checkbox" class="sheet hidden" value="${esc(t)}" checked>${esc(t)}</label>`).join('');
+    $$('.sheet').forEach(c => c.onchange = updatePool);
+  }
+  $('#unitAll').onclick = () => { $$('.unit').forEach(c => c.checked = true); updatePool(); };
+  $('#unitNone').onclick = () => { $$('.unit').forEach(c => c.checked = false); updatePool(); };
+  $$('input[name=mode]').forEach(r => r.onchange = () => {
+    const each = $('input[name=mode]:checked').value === 'each';
+    $('#modeTotal').classList.toggle('hidden', each);
+    $('#modeEach').classList.toggle('hidden', !each);
+    $('#modeEach').classList.toggle('grid', each);
+  });
+
+  function pool() {
+    const g = curGrade();
+    const units = new Set($$('.unit:checked').map(c => c.value));
+    const sheets = new Set($$('.sheet:checked').map(c => c.value));
+    return DB.filter(p => p.grade === g && units.has(p.unit) && sheets.has(p.sheet_type || '기타'));
+  }
+  function updatePool() {
+    const P = pool();
+    const c = DIFFS.map(d => P.filter(p => p.difficulty === d).length);
+    $('#pool').textContent = `선택 범위: 총 ${P.length}문항 (상 ${c[0]} · 중 ${c[1]} · 하 ${c[2]})`;
+  }
+
+  // ---------------- 문제 추출 / 검증 ----------------
+  function wanted() {
+    if ($('input[name=mode]:checked').value === 'each')
+      return {상: +$('#nH').value || 0, 중: +$('#nM').value || 0, 하: +$('#nL').value || 0};
+    const total = Math.max(1, +$('#total').value || 0);
+    const r = [+$('#rH').value || 0, +$('#rM').value || 0, +$('#rL').value || 0];
+    const sum = r.reduce((a, b) => a + b, 0) || 1;
+    // 비율대로 배분, 반올림 오차는 중 → 하 → 상 순으로 보정
+    const n = r.map(x => Math.floor(total * x / sum));
+    let rest = total - n.reduce((a, b) => a + b, 0);
+    for (let i = 1; rest > 0; i = (i + 1) % 3) { n[i]++; rest--; }
+    return {상: n[0], 중: n[1], 하: n[2]};
+  }
+  function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+  function pick() {
+    const P = pool();
+    const want = wanted();
+    const warns = [];
+    if (P.length === 0) { warns.push('선택한 조건에 해당하는 문제가 없습니다. 단원/학습지 종류를 확인하세요.'); return {items: [], warns}; }
+
+    // 단원이 고르게 섞이도록 난이도별로 "단원 라운드로빈" 큐를 만든다
+    const byDiff = {};
+    for (const d of DIFFS) {
+      const groups = {};
+      for (const p of P) if (p.difficulty === d) (groups[p.unit] ||= []).push(p);
+      const queues = Object.values(groups).map(shuffle);
+      const out = [];
+      while (queues.some(q => q.length)) for (const q of queues) if (q.length) out.push(q.pop());
+      byDiff[d] = out;
+    }
+
+    const chosen = [];
+    let deficit = 0;
+    for (const d of DIFFS) {
+      const take = byDiff[d].splice(0, want[d]);
+      chosen.push(...take);
+      if (take.length < want[d]) {
+        deficit += want[d] - take.length;
+        warns.push(`난이도 '${d}' 문항이 ${want[d]}개 필요하지만 ${take.length}개만 있습니다.`);
+      }
+    }
+    if (deficit > 0 && $('#fill').checked) {
+      const rest = shuffle([...byDiff.중, ...byDiff.하, ...byDiff.상]);
+      const extra = rest.splice(0, deficit);
+      chosen.push(...extra);
+      warns.push(extra.length === deficit
+        ? `부족분 ${deficit}문항을 다른 난이도에서 채웠습니다.`
+        : `다른 난이도까지 포함해도 ${deficit - extra.length}문항이 부족합니다.`);
+    }
+    const unitsSel = $$('.unit:checked').map(c => c.value);
+    const missing = unitsSel.filter(u => !chosen.some(p => p.unit === u));
+    if (missing.length && chosen.length) warns.push('출제되지 않은 단원: ' + missing.join(', '));
+
+    // 출제 순서: 하 → 중 → 상 (쉬운 문제부터), 같은 난이도는 단원 순
+    const order = {하: 0, 중: 1, 상: 2};
+    chosen.sort((a, b) => (order[a.difficulty] - order[b.difficulty]) || ((a.unit_no ?? 0) - (b.unit_no ?? 0)));
+    return {items: chosen, warns};
+  }
+
+  // ---------------- 생성 / 렌더 ----------------
+  $('#btnGen').onclick = generate;
+  $('#btnReshuffle').onclick = generate;
+  async function generate() {
+    const {items, warns} = pick();
+    showWarn(warns);
+    selected = items;
+    $('#btnPrint').disabled = $('#btnReshuffle').disabled = items.length === 0;
+    if (!items.length) {
+      $('#preview').innerHTML = '<div class="text-center text-gray-500 py-24 bg-white rounded-xl border border-dashed">생성된 문항이 없습니다.</div>';
+      return;
+    }
+    await render();
+  }
+  function showWarn(ws) {
+    const el = $('#warn');
+    el.classList.toggle('hidden', ws.length === 0);
+    el.innerHTML = ws.map(w => '⚠ ' + esc(w)).join('<br>');
+  }
+  $$('.tab').forEach(b => b.onclick = async () => {
+    tab = b.dataset.tab;
+    $$('.tab').forEach(x => x.className = 'tab px-4 py-2 font-semibold ' + (x === b ? 'bg-blue-600 text-white' : 'hover:bg-gray-50'));
+    if (selected.length) await render();
+  });
+  $('#btnPrint').onclick = () => window.print();
+
+  function titleText() {
+    const n = {중1: '1', 중2: '2', 중3: '3'}[curGrade()] || '';
+    return $('#title').value.trim() || `중학교 ${n}학년 수학 형성평가`;
+  }
+
+  function loadImg(src) {
+    if (!src) return Promise.resolve({w: 800, h: 60, missing: true});
+    if (imgCache.has(src)) return imgCache.get(src);
+    const p = new Promise(res => {
+      const im = new Image();
+      im.onload = () => res({w: im.naturalWidth, h: im.naturalHeight});
+      im.onerror = () => res({w: 800, h: 200, broken: true});
+      im.src = src;
+    });
+    imgCache.set(src, p);
+    return p;
+  }
+
+  // 컬럼의 실제 폭/높이(px)를 숨김 시트로 측정
+  function measureLayout(withHeader) {
+    const m = $('#measure');
+    m.innerHTML = sheetHTML(withHeader, '<div class="col" id="mcol"></div><div class="col"></div>');
+    const col = $('#mcol');
+    const r = {colW: col.clientWidth, colH: col.clientHeight};
+    m.innerHTML = '';
+    return r;
+  }
+
+  function sheetHTML(withHeader, colsInner, pageNo = 1, totalPages = 1, headerTitle = null) {
+    const g = curGrade();
+    const school = $('#school').value.trim();
+    const date = $('#date').value.trim();
+    const hdr = withHeader ? `
+      <div class="hdr">
+        <h1>${esc(headerTitle || titleText())}</h1>
+        <div class="sub">
+          <div>${esc(school)} ${esc(g)} · 문항 수 ${selected.length}${date ? ' · ' + esc(date) : ''}</div>
+          <div>이름 <span class="blank"></span>&nbsp;&nbsp; 점수 <span class="blank" style="min-width:16mm"></span></div>
+        </div>
+      </div>` : '';
+    return `<section class="sheet">${hdr}<div class="cols">${colsInner}</div><div class="ftr">- ${pageNo} / ${totalPages} -</div></section>`;
+  }
+
+  function itemHTML(p, idx, kind) {
+    const showMeta = $('#showMeta').checked && kind === 'q';
+    const meta = showMeta ? `<span class="meta">${esc(p.unit)} · ${esc(p.difficulty)}</span>` : '';
+    const swap = kind === 'q' ? `<button class="swap no-print" data-i="${idx}" title="다른 문제로 교체">↻ 교체</button>` : '';
+    const src = kind === 'q' ? p.image_url : p.explanation_image;
+    const body = src
+      ? `<img src="${esc(src)}" alt="">`
+      : `<div style="font-size:9pt;color:#6b7280">해설 이미지 없음${p.answer ? ' · 정답: ' + esc(p.answer) : ''}</div>`;
+    return `<div class="item"><span class="num">${idx + 1}</span>${meta}${swap}${body}</div>`;
+  }
+
+  // 핵심: 이미지 높이를 미리 계산해 컬럼 → 페이지로 greedy 배치 (문항이 페이지 경계에서 잘리지 않음)
+  async function paginate(items, kind, colW, colH, firstColH) {
+    const NUM_H = (6.5 + 1.5) * PX_PER_MM;   // 번호 뱃지 + 여백
+    const GAP = 5 * PX_PER_MM;               // 문항 간 간격
+    const sizes = await Promise.all(items.map(p => loadImg(kind === 'q' ? p.image_url : p.explanation_image)));
+    const heights = sizes.map(s => {
+      const imgH = s.w ? s.h * (colW / s.w) : 0;
+      return NUM_H + Math.min(imgH, colH - NUM_H - GAP) + GAP;
+    });
+    const pages = [];
+    let page = [[], []], ci = 0, used = 0, limit = firstColH;
+    const flush = () => { pages.push(page); page = [[], []]; ci = 0; used = 0; limit = colH; };
+    items.forEach((p, i) => {
+      const h = heights[i];
+      if (used + h > limit && used > 0) {
+        if (ci === 0) { ci = 1; used = 0; limit = pages.length === 0 ? firstColH : colH; }
+        else flush();
+      }
+      page[ci].push(i); used += h;
+    });
+    if (page[0].length || page[1].length) pages.push(page);
+    return pages;
+  }
+
+  async function render() {
+    const pv = $('#preview');
+    pv.innerHTML = '<div class="text-center text-gray-500 py-10">레이아웃 계산 중…</div>';
+    const withHdr = measureLayout(true), noHdr = measureLayout(false);
+
+    let html = '';
+    if (tab === 'exam') {
+      const pages = await paginate(selected, 'q', withHdr.colW, noHdr.colH, withHdr.colH);
+      html = pages.map((pg, pi) => sheetHTML(pi === 0, pg.map(col =>
+        `<div class="col">${col.map(i => itemHTML(selected[i], i, 'q')).join('')}</div>`).join(''), pi + 1, pages.length)).join('');
+      $('#pageInfo').textContent = `시험지 ${pages.length}쪽 · ${selected.length}문항`;
+    } else {
+      // 1쪽 상단: 빠른 정답표, 이어서 해설 이미지 2단 배치
+      const perRow = 10;
+      const rows = [];
+      for (let i = 0; i < selected.length; i += perRow)
+        rows.push(selected.slice(i, i + perRow).map((p, k) => ({n: i + k + 1, a: p.answer || '—'})));
+      const table = `<table class="anstable">${rows.map(r =>
+        `<tr>${r.map(c => `<th>${c.n}</th>`).join('')}</tr><tr>${r.map(c => `<td>${esc(c.a)}</td>`).join('')}</tr>`).join('')}</table>`;
+      const m = $('#measure');
+      m.innerHTML = `<div style="width:${withHdr.colW * 2 + 8 * PX_PER_MM}px">${table}</div>`;
+      const tableH = m.firstChild.offsetHeight + 4 * PX_PER_MM;   // + 표 하단 여백(4mm)
+      m.innerHTML = '';
+      const firstColH = Math.max(0, withHdr.colH - tableH);
+      const pages = await paginate(selected, 'a', withHdr.colW, noHdr.colH, firstColH);
+      html = pages.map((pg, pi) => {
+        const cols = pg.map(col => `<div class="col">${col.map(i => itemHTML(selected[i], i, 'a')).join('')}</div>`).join('');
+        const sec = sheetHTML(pi === 0, cols, pi + 1, pages.length, titleText() + ' · 정답 및 해설');
+        return pi === 0 ? sec.replace('<div class="cols">', table + '<div class="cols">') : sec;
+      }).join('');
+      $('#pageInfo').textContent = `해설지 ${pages.length}쪽`;
+    }
+    pv.innerHTML = html;
+    $$('.swap').forEach(b => b.onclick = () => swapOne(+b.dataset.i));
+  }
+
+  // 문항 하나만 같은 난이도의 다른 문제로 교체
+  async function swapOne(i) {
+    const cur = selected[i];
+    const used = new Set(selected.map(p => p.id));
+    let cand = pool().filter(p => !used.has(p.id) && p.difficulty === cur.difficulty);
+    if (!cand.length) cand = pool().filter(p => !used.has(p.id));
+    if (!cand.length) { alert('교체할 수 있는 문제가 더 없습니다.'); return; }
+    selected[i] = cand[Math.floor(Math.random() * cand.length)];
+    await render();
+  }
+
+  function esc(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+  }
+
+  // ---------------- 데모 데이터 (problems.json 없이도 즉시 실행) ----------------
+  function makeDemo() {
+    const UNITS = {
+      중1: ['1. 소인수분해', '2. 정수와 유리수', '3. 문자와 식', '4. 좌표평면과 그래프'],
+      중2: ['1. 유리수와 순환소수', '2. 식의 계산', '3. 일차부등식', '4. 연립일차방정식'],
+      중3: ['1. 실수와 그 연산', '2. 다항식의 곱셈과 인수분해', '3. 이차방정식'],
+    };
+    const svg = (txt, h, color) => 'data:image/svg+xml;utf8,' + encodeURIComponent(
+      `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="${h}"><rect width="800" height="${h}" fill="#fff" stroke="${color}" stroke-dasharray="6 4"/>` +
+      `<text x="20" y="40" font-size="26" font-family="sans-serif" fill="#111">${txt}</text>` +
+      `<text x="20" y="${h - 20}" font-size="18" fill="#9ca3af">(실제 데이터에서는 HWP 에서 추출한 문제 이미지가 표시됩니다)</text></svg>`);
+    const out = [];
+    for (const [g, units] of Object.entries(UNITS)) units.forEach((u, ui) => {
+      for (let k = 1; k <= 12; k++) {
+        const d = DIFFS[k % 3];
+        const id = `MATH_${g.slice(1)}_${String(ui + 1).padStart(2, '0')}_${String(k).padStart(3, '0')}`;
+        const h = 140 + Math.floor(Math.random() * 180);
+        out.push({
+          id, grade: g, unit: u, unit_no: ui + 1, difficulty: d, sheet_type: k % 2 ? '준비학습지' : '연산학습지',
+          image_url: svg(`${g} ${u} [${d}] 문제 ${k}`, h, '#2563eb'),
+          answer: String(Math.floor(Math.random() * 20) - 5),
+          explanation_image: svg(`${id} 해설`, 120 + Math.floor(Math.random() * 80), '#16a34a'),
+        });
+      }
+    });
+    return out;
+  }
+
+  loadDB();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# 출판사 원본 자료 (저작물, 대용량) - 저장소에 올리지 않음
+*.zip
+source/
+*.hwp
+*.hwpx
+
+# 변환 중간 산출물
+work/
+
+# 생성된 문항 이미지 / DB (용량이 크면 별도 스토리지 권장)
+web/images/
+web/problems.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

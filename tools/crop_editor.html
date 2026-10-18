@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문항 영역 편집기</title>
+<style>
+  :root{--bg:#f4f5f7;--panel:#fff;--line:#d9dce3;--accent:#2563eb;--danger:#dc2626;--text:#1f2937}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,"Malgun Gothic",sans-serif;background:var(--bg);color:var(--text);display:grid;grid-template-columns:300px 1fr;height:100vh}
+  aside{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+  aside header{padding:12px;border-bottom:1px solid var(--line)}
+  aside h1{font-size:15px;margin:0 0 8px}
+  .btn{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:#fff;cursor:pointer;font-size:13px}
+  .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .btn.danger{color:var(--danger)}
+  .btn:disabled{opacity:.5;cursor:default}
+  #tree{overflow:auto;flex:1;font-size:13px}
+  .doc{padding:6px 10px;font-weight:600;background:#f9fafb;border-bottom:1px solid var(--line);word-break:break-all}
+  .page{padding:4px 10px 4px 22px;cursor:pointer;border-bottom:1px solid #eef0f3}
+  .page.active{background:#dbeafe}
+  .page small{color:#6b7280}
+  main{display:flex;flex-direction:column;min-height:0}
+  .toolbar{display:flex;gap:8px;align-items:center;padding:8px 12px;background:var(--panel);border-bottom:1px solid var(--line);font-size:13px;flex-wrap:wrap}
+  .toolbar .sp{flex:1}
+  #stage{flex:1;overflow:auto;padding:16px;position:relative}
+  #wrap{position:relative;display:inline-block;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+  #wrap img{display:block;user-select:none;-webkit-user-drag:none}
+  #overlay{position:absolute;inset:0;cursor:crosshair}
+  .box{position:absolute;border:2px solid var(--accent);background:rgba(37,99,235,.08);cursor:move}
+  .box.sel{border-color:var(--danger);background:rgba(220,38,38,.1)}
+  .box .n{position:absolute;left:-2px;top:-20px;background:var(--accent);color:#fff;font-size:11px;padding:1px 5px;border-radius:3px}
+  .box.sel .n{background:var(--danger)}
+  .box .h{position:absolute;right:-6px;bottom:-6px;width:12px;height:12px;background:#fff;border:2px solid var(--accent);cursor:nwse-resize}
+  .hint{color:#6b7280;font-size:12px;padding:0 12px 8px}
+  input[type=range]{width:120px}
+</style>
+</head>
+<body>
+<aside>
+  <header>
+    <h1>문항 영역 편집기</h1>
+    <div style="display:flex;gap:6px;flex-wrap:wrap">
+      <button class="btn" id="btnLoad">crops.json 불러오기</button>
+      <input type="file" id="fileIn" accept=".json" hidden>
+      <button class="btn primary" id="btnSave" disabled>저장</button>
+    </div>
+  </header>
+  <div class="hint">프로젝트 루트에서 서버를 띄워 열면 <code>/work/crops.json</code> 을 자동으로 읽습니다.</div>
+  <div id="tree"></div>
+</aside>
+<main>
+  <div class="toolbar">
+    <span id="title">페이지를 선택하세요</span>
+    <span class="sp"></span>
+    <label>확대 <input type="range" id="zoom" min="20" max="120" value="45"></label>
+    <button class="btn" id="btnSort" disabled>번호 재정렬(단→위→아래)</button>
+    <button class="btn danger" id="btnDel" disabled>선택 삭제 (Del)</button>
+    <button class="btn danger" id="btnClear" disabled>이 페이지 전체 삭제</button>
+  </div>
+  <div class="hint">빈 곳 드래그 = 새 영역 · 영역 드래그 = 이동 · 우하단 핸들 = 크기 조절 · 클릭 후 Del = 삭제 · 저장은 Chrome/Edge 에서 work/crops.json 을 직접 덮어쓸 수 있습니다.</div>
+  <div id="stage"><div id="wrap" hidden><img id="pageImg" alt=""><div id="overlay"></div></div></div>
+</main>
+<script>
+(() => {
+  let data = null, cur = null, sel = -1, scale = .45, fileHandle = null;
+  const $ = s => document.querySelector(s);
+  const tree = $('#tree'), wrap = $('#wrap'), img = $('#pageImg'), ov = $('#overlay');
+
+  // ---- 로드 ----
+  async function tryFetch() {
+    try {
+      const r = await fetch('/work/crops.json', {cache: 'no-store'});
+      if (r.ok) { data = await r.json(); render(); }
+    } catch (e) { /* file:// 등에서는 수동 로드 */ }
+  }
+  $('#btnLoad').onclick = async () => {
+    if (window.showOpenFilePicker) {
+      try {
+        [fileHandle] = await showOpenFilePicker({types: [{description: 'JSON', accept: {'application/json': ['.json']}}]});
+        data = JSON.parse(await (await fileHandle.getFile()).text()); render(); return;
+      } catch (e) { if (e.name === 'AbortError') return; }
+    }
+    $('#fileIn').click();
+  };
+  $('#fileIn').onchange = async e => {
+    const f = e.target.files[0]; if (!f) return;
+    data = JSON.parse(await f.text()); render();
+  };
+
+  // ---- 저장 ----
+  $('#btnSave').onclick = async () => {
+    const txt = JSON.stringify(data, null, 1);
+    try {
+      if (!fileHandle && window.showSaveFilePicker)
+        fileHandle = await showSaveFilePicker({suggestedName: 'crops.json', types: [{description: 'JSON', accept: {'application/json': ['.json']}}]});
+      if (fileHandle) {
+        const w = await fileHandle.createWritable(); await w.write(txt); await w.close();
+        toast('저장 완료: ' + fileHandle.name); return;
+      }
+    } catch (e) { if (e.name === 'AbortError') return; }
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([txt], {type: 'application/json'}));
+    a.download = 'crops.json'; a.click();
+    toast('crops.json 다운로드됨 → work/crops.json 으로 덮어쓰세요');
+  };
+  function toast(m) { $('#title').textContent = m; }
+
+  // ---- 트리 ----
+  function render() {
+    tree.innerHTML = '';
+    $('#btnSave').disabled = false;
+    for (const [stem, doc] of Object.entries(data.docs)) {
+      const d = document.createElement('div'); d.className = 'doc';
+      const total = doc.pages.reduce((s, p) => s + p.boxes.length, 0);
+      d.textContent = stem + '  (' + total + ')';
+      tree.appendChild(d);
+      doc.pages.forEach((p, i) => {
+        const el = document.createElement('div'); el.className = 'page';
+        el.innerHTML = 'p' + (i + 1) + ' <small>' + p.boxes.length + '개</small>';
+        el.onclick = () => { open(stem, i); [...tree.querySelectorAll('.page')].forEach(x => x.classList.remove('active')); el.classList.add('active'); };
+        tree.appendChild(el);
+      });
+    }
+  }
+  function open(stem, i) {
+    cur = {stem, i, page: data.docs[stem].pages[i]}; sel = -1;
+    img.src = '/' + cur.page.image + '?t=' + Date.now();
+    img.onload = () => { wrap.hidden = false; layout(); };
+    img.onerror = () => { toast('이미지를 찾을 수 없음: ' + cur.page.image + ' (프로젝트 루트에서 서버를 띄웠는지 확인)'); };
+    $('#title').textContent = stem + ' · ' + (i + 1) + '페이지';
+    ['#btnSort', '#btnDel', '#btnClear'].forEach(s => $(s).disabled = false);
+  }
+  $('#zoom').oninput = e => { scale = e.target.value / 100; layout(); };
+
+  // ---- 박스 렌더 ----
+  function layout() {
+    if (!cur) return;
+    const W = cur.page.width, H = cur.page.height;
+    img.style.width = W * scale + 'px'; img.style.height = H * scale + 'px';
+    ov.innerHTML = '';
+    cur.page.boxes.forEach((b, k) => {
+      const el = document.createElement('div');
+      el.className = 'box' + (k === sel ? ' sel' : '');
+      el.style.left = b.x * scale + 'px'; el.style.top = b.y * scale + 'px';
+      el.style.width = b.w * scale + 'px'; el.style.height = b.h * scale + 'px';
+      el.innerHTML = '<span class="n">' + (k + 1) + '</span><span class="h"></span>';
+      el.onpointerdown = e => startDrag(e, k, e.target.classList.contains('h') ? 'resize' : 'move');
+      ov.appendChild(el);
+    });
+    refreshCounts();
+  }
+  function refreshCounts() {
+    const active = tree.querySelector('.page.active');
+    if (active) active.innerHTML = 'p' + (cur.i + 1) + ' <small>' + cur.page.boxes.length + '개</small>';
+  }
+
+  // ---- 드래그: 생성 / 이동 / 리사이즈 ----
+  let drag = null;
+  ov.onpointerdown = e => {
+    if (e.target !== ov) return;
+    const r = ov.getBoundingClientRect();
+    const x = (e.clientX - r.left) / scale, y = (e.clientY - r.top) / scale;
+    cur.page.boxes.push({x: Math.round(x), y: Math.round(y), w: 1, h: 1});
+    sel = cur.page.boxes.length - 1;
+    drag = {mode: 'create', k: sel, ox: x, oy: y};
+    ov.setPointerCapture(e.pointerId); layout();
+  };
+  function startDrag(e, k, mode) {
+    e.stopPropagation(); e.preventDefault();
+    sel = k; const b = cur.page.boxes[k];
+    const r = ov.getBoundingClientRect();
+    drag = {mode, k, ox: (e.clientX - r.left) / scale, oy: (e.clientY - r.top) / scale, b0: {...b}};
+    ov.setPointerCapture(e.pointerId); layout();
+  }
+  ov.onpointermove = e => {
+    if (!drag) return;
+    const r = ov.getBoundingClientRect();
+    const x = (e.clientX - r.left) / scale, y = (e.clientY - r.top) / scale;
+    const b = cur.page.boxes[drag.k];
+    if (drag.mode === 'create') {
+      b.x = Math.round(Math.min(x, drag.ox)); b.y = Math.round(Math.min(y, drag.oy));
+      b.w = Math.round(Math.abs(x - drag.ox)); b.h = Math.round(Math.abs(y - drag.oy));
+    } else if (drag.mode === 'move') {
+      b.x = Math.round(drag.b0.x + x - drag.ox); b.y = Math.round(drag.b0.y + y - drag.oy);
+    } else {
+      b.w = Math.max(10, Math.round(drag.b0.w + x - drag.ox)); b.h = Math.max(10, Math.round(drag.b0.h + y - drag.oy));
+    }
+    layout();
+  };
+  ov.onpointerup = () => {
+    if (drag && drag.mode === 'create') {
+      const b = cur.page.boxes[drag.k];
+      if (b.w < 15 || b.h < 15) { cur.page.boxes.splice(drag.k, 1); sel = -1; }
+    }
+    drag = null; layout();
+  };
+
+  // ---- 편집 명령 ----
+  function del() { if (sel >= 0) { cur.page.boxes.splice(sel, 1); sel = -1; layout(); } }
+  $('#btnDel').onclick = del;
+  document.addEventListener('keydown', e => { if ((e.key === 'Delete' || e.key === 'Backspace') && cur && document.activeElement.tagName !== 'INPUT') del(); });
+  $('#btnClear').onclick = () => { if (confirm('이 페이지의 영역을 모두 삭제할까요?')) { cur.page.boxes = []; sel = -1; layout(); } };
+  $('#btnSort').onclick = () => {
+    // 왼쪽 단 → 오른쪽 단, 각 단은 위 → 아래. 박스 중심 x 가 페이지 중앙 기준.
+    const mid = cur.page.width / 2;
+    cur.page.boxes.sort((a, b) => {
+      const ca = (a.x + a.w / 2) < mid ? 0 : 1, cb = (b.x + b.w / 2) < mid ? 0 : 1;
+      return ca !== cb ? ca - cb : a.y - b.y;
+    });
+    sel = -1; layout();
+  };
+
+  tryFetch();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# HWP -> PDF 자동화 (Windows + 한글 설치 필요)
+pywin32>=306
+# PDF -> PNG 렌더링 (poppler 불필요, 순수 pip 설치)
+pymupdf>=1.24
+# 이미지 처리 / 문항 자동 분할
+pillow>=10.0
+numpy>=1.26
