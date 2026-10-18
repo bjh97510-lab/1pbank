@@ -7,6 +7,7 @@
   "cleanUrls": true,
   "redirects": [
     { "source": "/web", "destination": "/", "permanent": false },
+    { "source": "/web/", "destination": "/", "permanent": false },
     { "source": "/web/:path*", "destination": "/:path*", "permanent": false }
   ]
 }
