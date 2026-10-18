@@ -4,5 +4,9 @@
   "buildCommand": "",
   "installCommand": "",
   "outputDirectory": "web",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/web", "destination": "/", "permanent": false },
+    { "source": "/web/:path*", "destination": "/:path*", "permanent": false }
+  ]
 }
