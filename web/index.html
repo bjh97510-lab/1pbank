@@ -26,6 +26,9 @@
   .item .num{display:inline-flex;align-items:center;justify-content:center;width:6.5mm;height:6.5mm;border-radius:999px;background:#111;color:#fff;font-weight:700;font-size:9pt;margin-bottom:1.5mm}
   .item .meta{font-size:7.5pt;color:#9ca3af;margin-left:2mm;vertical-align:middle}
   .item img{display:block;width:100%;height:auto;max-height:235mm;object-fit:contain;object-position:left top}
+  .item .work{width:100%}
+  .item .ansline{display:flex;align-items:flex-end;gap:2mm;font-size:9.5pt;font-weight:700;margin-top:2mm}
+  .item .ansline .line{flex:1;max-width:45mm;border-bottom:1px solid #111;height:5mm}
   .item .swap{position:absolute;right:0;top:0;font-size:10px;background:#f3f4f6;border:1px solid #d1d5db;border-radius:4px;padding:1px 5px;cursor:pointer;opacity:0;transition:opacity .15s}
   .item:hover .swap{opacity:1}
   .sheet .ftr{position:absolute;bottom:6mm;left:0;right:0;text-align:center;font-size:8pt;color:#6b7280}
@@ -120,6 +123,21 @@
         <label class="flex items-center gap-2 text-xs text-gray-600 mt-2">
           <input id="showMeta" type="checkbox"> 문항 옆에 단원·난이도 표시 (교사용)
         </label>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold mb-1">풀이 공간 / 정답란</label>
+        <div class="flex items-center gap-2 text-sm">
+          <span class="text-gray-500">풀이 공간</span>
+          <select id="workH" class="border rounded px-2 py-1">
+            <option value="0">없음</option>
+            <option value="10">10mm</option>
+            <option value="15">15mm</option>
+            <option value="20" selected>20mm</option>
+            <option value="30">30mm</option>
+            <option value="40">40mm</option>
+          </select>
+          <label class="flex items-center gap-1 ml-2"><input id="ansLine" type="checkbox" checked> 정답 기입란</label>
+        </div>
       </div>
       <button id="btnGen" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-lg disabled:opacity-40" disabled>학습지 생성하기</button>
       <div id="warn" class="hidden text-sm rounded-lg p-3 bg-amber-50 border border-amber-300 text-amber-800"></div>
@@ -329,6 +347,8 @@
     if (selected.length) await render();
   });
   $('#btnPrint').onclick = () => window.print();
+  // 풀이 공간/정답란/메타 표시를 바꾸면 이미 만든 학습지를 그대로 다시 배치
+  ['#workH', '#ansLine', '#showMeta'].forEach(s => $(s).onchange = async () => { if (selected.length) await render(); });
 
   function titleText() {
     const n = {중1: '1', 중2: '2', 중3: '3'}[curGrade()] || '';
@@ -381,7 +401,16 @@
     const body = src
       ? `<img src="${esc(src)}" alt="">`
       : `<div style="font-size:9pt;color:#6b7280">해설 이미지 없음${p.answer ? ' · 정답: ' + esc(p.answer) : ''}</div>`;
-    return `<div class="item"><span class="num">${idx + 1}</span>${meta}${swap}${body}</div>`;
+    let extra = '';
+    if (kind === 'q') {
+      const wh = workOpts().workH;
+      if (wh > 0) extra += `<div class="work" style="height:${wh}mm"></div>`;
+      if (workOpts().ansLine) extra += `<div class="ansline"><span>정답:</span><span class="line"></span></div>`;
+    }
+    return `<div class="item"><span class="num">${idx + 1}</span>${meta}${swap}${body}${extra}</div>`;
+  }
+  function workOpts() {
+    return {workH: +$('#workH').value || 0, ansLine: $('#ansLine').checked};
   }
 
   // 핵심: 이미지 높이를 미리 계산해 컬럼 → 페이지로 greedy 배치 (문항이 페이지 경계에서 잘리지 않음)
@@ -389,9 +418,12 @@
     const NUM_H = (6.5 + 1.5) * PX_PER_MM;   // 번호 뱃지 + 여백
     const GAP = 5 * PX_PER_MM;               // 문항 간 간격
     const sizes = await Promise.all(items.map(p => loadImg(kind === 'q' ? p.image_url : p.explanation_image)));
+    // 풀이 공간 + 정답란 높이 (시험지 탭에만)
+    const o = workOpts();
+    const EXTRA = kind === 'q' ? (o.workH * PX_PER_MM + (o.ansLine ? (5 + 2) * PX_PER_MM : 0)) : 0;
     const heights = sizes.map(s => {
       const imgH = s.w ? s.h * (colW / s.w) : 0;
-      return NUM_H + Math.min(imgH, colH - NUM_H - GAP) + GAP;
+      return NUM_H + Math.min(imgH, colH - NUM_H - GAP - EXTRA) + EXTRA + GAP;
     });
     const pages = [];
     let page = [[], []], ci = 0, used = 0, limit = firstColH;
