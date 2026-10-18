@@ -112,6 +112,14 @@
         <label class="flex items-center gap-2 text-xs text-gray-600 mt-2">
           <input id="fill" type="checkbox" checked> 부족한 난이도는 다른 난이도로 채우기
         </label>
+        <div class="flex items-center gap-2 text-sm mt-2">
+          <span class="text-gray-500">출제 순서</span>
+          <select id="orderMode" class="border rounded px-2 py-1">
+            <option value="asc" selected>하 → 중 → 상 (쉬운 문제부터)</option>
+            <option value="desc">상 → 중 → 하</option>
+            <option value="random">무작위</option>
+          </select>
+        </div>
       </div>
       <div>
         <label class="block text-sm font-semibold mb-1">시험지 제목</label>
@@ -316,10 +324,14 @@
     const missing = unitsSel.filter(u => !chosen.some(p => p.unit === u));
     if (missing.length && chosen.length) warns.push('출제되지 않은 단원: ' + missing.join(', '));
 
-    // 출제 순서: 하 → 중 → 상 (쉬운 문제부터), 같은 난이도는 단원 순
-    const order = {하: 0, 중: 1, 상: 2};
-    chosen.sort((a, b) => (order[a.difficulty] - order[b.difficulty]) || ((a.unit_no ?? 0) - (b.unit_no ?? 0)));
-    return {items: chosen, warns};
+    return {items: sortItems(chosen), warns};
+  }
+  // 출제 순서: 기본은 하 → 중 → 상 (쉬운 문제부터), 같은 난이도 안에서는 단원 순
+  function sortItems(list) {
+    const mode = $('#orderMode').value;
+    if (mode === 'random') return shuffle(list);
+    const order = mode === 'desc' ? {상: 0, 중: 1, 하: 2} : {하: 0, 중: 1, 상: 2};
+    return list.sort((a, b) => (order[a.difficulty] - order[b.difficulty]) || ((a.unit_no ?? 0) - (b.unit_no ?? 0)));
   }
 
   // ---------------- 생성 / 렌더 ----------------
@@ -349,6 +361,7 @@
   $('#btnPrint').onclick = () => window.print();
   // 풀이 공간/정답란/메타 표시를 바꾸면 이미 만든 학습지를 그대로 다시 배치
   ['#workH', '#ansLine', '#showMeta'].forEach(s => $(s).onchange = async () => { if (selected.length) await render(); });
+  $('#orderMode').onchange = async () => { if (selected.length) { selected = sortItems(selected); await render(); } };
 
   function titleText() {
     const n = {중1: '1', 중2: '2', 중3: '3'}[curGrade()] || '';
@@ -484,6 +497,7 @@
     if (!cand.length) cand = pool().filter(p => !used.has(p.id));
     if (!cand.length) { alert('교체할 수 있는 문제가 더 없습니다.'); return; }
     selected[i] = cand[Math.floor(Math.random() * cand.length)];
+    if ($('#orderMode').value !== 'random') selected = sortItems(selected);   // 교체 후에도 난이도 순서 유지
     await render();
   }
 
