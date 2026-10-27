@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>수학 학습지 생성기</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<style>
+<style id="sheetCss">
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
   :root{
     --page-w:210mm; --page-h:297mm; --page-pad:13mm; --col-gap:9mm;
@@ -262,7 +262,7 @@
     if (q.get('school')) $('#school').value = q.get('school');
     if (q.get('meta')) $('#showMeta').checked = q.get('meta') === '1';
     if (q.get('tab') === 'answer') $('button[data-tab=answer]').click();
-    generate();
+    generate().then(() => { if (q.has('dumpprint')) printSheets(); });
   }
   $('#jsonFile').onchange = async e => {
     const f = e.target.files[0]; if (!f) return;
@@ -413,7 +413,46 @@
     $$('.tab').forEach(x => x.className = 'tab px-4 py-2 font-semibold ' + (x === b ? 'bg-blue-600 text-white' : 'hover:bg-gray-50'));
     if (selected.length) await render();
   });
-  $('#btnPrint').onclick = () => window.print();
+  $('#btnPrint').onclick = printSheets;
+  // 인쇄: 현재 페이지(컨트롤 패널, 브라우저 확장 프로그램이 끼워 넣은 요소 포함)가 아니라
+  // 시험지만 담은 별도 문서를 숨은 iframe 에 만들어 그 문서만 인쇄한다.
+  function printSheets() {
+    if (!selected.length) return;
+    const css = $('#sheetCss').textContent;   // 시험지 CSS 만 (Tailwind·보조 인쇄 규칙 제외)
+    const doc = `<!doctype html><html lang="ko"><head><meta charset="utf-8">
+      <base href="${esc(location.href.split('?')[0])}"><title>${esc(titleText())}</title>
+      <style>${css}</style>
+      <style>
+        html,body{margin:0;padding:0;background:#fff}
+        .sheet{margin:0;box-shadow:none;break-after:page;page-break-after:always}
+        .sheet:last-child{break-after:auto;page-break-after:auto}
+        .swap{display:none}
+      </style></head><body>${$('#preview').innerHTML}</body></html>`;
+    if (new URLSearchParams(location.search).has('dumpprint')) {   // 점검용: 인쇄 문서를 현재 창에 그대로 표시
+      document.open(); document.write(doc); document.close(); return;
+    }
+    let f = $('#printFrame');
+    if (f) f.remove();
+    f = document.createElement('iframe');
+    f.id = 'printFrame';
+    f.setAttribute('aria-hidden', 'true');
+    f.style.cssText = 'position:fixed;right:0;bottom:0;width:0;height:0;border:0;visibility:hidden';
+    document.body.appendChild(f);
+    f.onload = async () => {
+      const w = f.contentWindow, d = f.contentDocument;
+      try {
+        await Promise.all([...d.images].map(im => im.complete ? null : new Promise(r => { im.onload = im.onerror = r; })));
+        if (d.fonts && d.fonts.ready) await d.fonts.ready;
+      } catch (e) { /* 이미지/폰트 대기 실패해도 인쇄는 진행 */ }
+      setTimeout(() => { w.focus(); w.print(); }, 150);
+    };
+    f.srcdoc = doc;
+  }
+  // 브라우저 메뉴(Ctrl+P)로 인쇄할 때를 위한 보조: 페이지에 끼워 넣어진 외부 요소를 숨김
+  const style = document.createElement('style');
+  style.id = 'printFallback';
+  style.textContent = '@media print{ body > *:not(#app):not(#printFrame){display:none !important} }';
+  document.head.appendChild(style);
   // 풀이 공간/정답란/메타 표시를 바꾸면 이미 만든 학습지를 그대로 다시 배치
   ['#workH', '#ansLine', '#showMeta', '#imgScale'].forEach(s => $(s).onchange = async () => { if (selected.length) await render(); });
   $('#orderMode').onchange = async () => { if (selected.length) { selected = sortItems(selected); await render(); } };
